@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Over het gebouw — Meander1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <nav class="links" id="navLinks">
+      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active">NL</button>
+        <button id="btnEn">EN</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="over">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num mono">01</span>
+        <h2 data-i18n="over.h2">Een slingerend<br>silhouet</h2>
+      </div>
+      <p class="desc" data-i18n="over.desc">Gebouwd op het voormalige industrieterrein AWIC, tussen de Jordaan en het water.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="reveal">
+        <p data-i18n="over.p1">Meander1 dankt zijn naam aan zijn vorm. In plaats van een rechte gevel volgt het gebouw de kromming van de kade langs de Kostverlorenvaart — een ontwerpkeuze van architect Rob Krier die het complex zijn karakteristieke, golvende silhouet geeft.</p>
+        <p data-i18n="over.p2">Door die vorm ontstonden twee binnentuinen, een grote en een kleine, die rust en groen brengen midden in de stad. Aan de voorzijde ligt een autovrij plein aan de kade: een plek waar bewoners elkaar tegenkomen, kinderen buiten spelen en het water dichtbij blijft.</p>
+        <p data-i18n="over.p3">Het eerste bouwdeel — de huisnummers 1 tot en met 204 — werd opgeleverd in 2000. Naast de woningen bevat de plint van het gebouw ook een restaurant en kantoorruimte, wat Meander1 ook overdag een levendige plek maakt.</p>
+      </div>
+      <div class="fact-panel reveal">
+        <div class="fact"><span class="k mono" data-i18n="fact.architect">Architect</span><span class="v">Rob Krier</span></div>
+        <div class="fact"><span class="k mono" data-i18n="fact.year">Oplevering</span><span class="v">2000</span></div>
+        <div class="fact"><span class="k mono" data-i18n="fact.units">Appartementen</span><span class="v">204</span></div>
+        <div class="fact"><span class="k mono" data-i18n="fact.gardens">Binnentuinen</span><span class="v" data-i18n="fact.gardens.v">Groot &amp; klein</span></div>
+        <div class="fact"><span class="k mono" data-i18n="fact.parking">Parkeerplekken</span><span class="v">200</span></div>
+        <div class="fact"><span class="k mono" data-i18n="fact.location">Ligging</span><span class="v" data-i18n="fact.location.v">Aan de Jordaan</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MEANDER1</h3>
+        <p data-i18n="foot.p">Van der Palmkade, Amsterdam — een vereniging van eigenaren met 204 appartementen, gebouwd naar ontwerp van Rob Krier.</p>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.nav">Navigatie</div>
+        <ul>
+          <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
+          <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
+          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
+          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
+          <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.contact">Contact</div>
+        <ul>
+          <li><a href="mailto:bestuur@meander1.nl">bestuur@meander1.nl</a></li>
+          <li><a href="mailto:beheer@meander1.nl">beheer@meander1.nl</a></li>
+          <li><a href="tel:0235631403">023 563 1403</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© Meander1 — Vereniging van Eigenaren</span>
+      <span data-i18n="foot.made">Onderhouden voor en door bewoners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

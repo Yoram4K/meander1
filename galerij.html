@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerij — Meander1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <nav class="links" id="navLinks">
+      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active">NL</button>
+        <button id="btnEn">EN</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="galerij">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="num mono">03</span>
+        <h2 data-i18n="gal.h2">Meander<br>in beeld</h2>
+      </div>
+      <p class="desc" data-i18n="gal.desc">Vier plekken die het gebouw zijn karakter geven.</p>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <figure class="g-tile">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="400" fill="#E8E1D3"/>
+          <path d="M0,260 C80,180 140,320 220,240 C300,160 340,260 400,220 L400,400 L0,400 Z" fill="#A8503E" opacity="0.85"/>
+          <path d="M0,300 C90,240 160,340 240,280 C320,220 360,300 400,270 L400,400 L0,400 Z" fill="#3E5C63" opacity="0.9"/>
+          <g stroke="#F2EEE6" stroke-width="2" opacity="0.6">
+            <line x1="30" y1="330" x2="30" y2="380"/><line x1="60" y1="320" x2="60" y2="380"/>
+            <line x1="90" y1="335" x2="90" y2="380"/><line x1="120" y1="315" x2="120" y2="380"/>
+            <line x1="150" y1="330" x2="150" y2="380"/><line x1="180" y1="310" x2="180" y2="380"/>
+            <line x1="210" y1="325" x2="210" y2="380"/><line x1="240" y1="305" x2="240" y2="380"/>
+            <line x1="270" y1="320" x2="270" y2="380"/><line x1="300" y1="300" x2="300" y2="380"/>
+            <line x1="330" y1="315" x2="330" y2="380"/><line x1="360" y1="295" x2="360" y2="380"/>
+          </g>
+        </svg>
+        <figcaption data-i18n="gal.t1">De gevel langs de vaart</figcaption>
+      </figure>
+
+      <figure class="g-tile">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="200" height="200" fill="#7C8B6F"/>
+          <circle cx="60" cy="70" r="26" fill="#F2EEE6" opacity="0.25"/>
+          <circle cx="140" cy="120" r="34" fill="#F2EEE6" opacity="0.2"/>
+          <circle cx="100" cy="160" r="18" fill="#F2EEE6" opacity="0.3"/>
+          <path d="M0,190 Q100,170 200,190 L200,200 L0,200 Z" fill="#22262B" opacity="0.15"/>
+        </svg>
+        <figcaption data-i18n="gal.t2">De binnentuinen</figcaption>
+      </figure>
+
+      <figure class="g-tile">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="200" height="200" fill="#22262B"/>
+          <g fill="none" stroke="#A8503E" stroke-width="3">
+            <rect x="20" y="30" width="35" height="140"/>
+            <rect x="65" y="30" width="35" height="140"/>
+            <rect x="110" y="30" width="35" height="140"/>
+            <rect x="155" y="30" width="25" height="140"/>
+          </g>
+        </svg>
+        <figcaption data-i18n="gal.t3">De parkeergarage</figcaption>
+      </figure>
+
+      <figure class="g-tile">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="200" height="200" fill="#3E5C63"/>
+          <path d="M0,120 C50,80 90,150 140,110 C160,95 180,105 200,90" fill="none" stroke="#F2EEE6" stroke-width="4" opacity="0.8"/>
+          <circle cx="40" cy="107" r="5" fill="#A8503E"/>
+          <circle cx="140" cy="110" r="5" fill="#A8503E"/>
+          <circle cx="200" cy="90" r="5" fill="#A8503E"/>
+        </svg>
+        <figcaption data-i18n="gal.t4">Het plein aan de kade</figcaption>
+      </figure>
+    </div>
+    <p class="gallery-note" data-i18n="gal.note">Dit zijn illustraties in de stijl van de site — ter vervanging kan het bestuur hier eenvoudig eigen foto's van het gebouw plaatsen.</p>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MEANDER1</h3>
+        <p data-i18n="foot.p">Van der Palmkade, Amsterdam — een vereniging van eigenaren met 204 appartementen, gebouwd naar ontwerp van Rob Krier.</p>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.nav">Navigatie</div>
+        <ul>
+          <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
+          <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
+          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
+          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
+          <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.contact">Contact</div>
+        <ul>
+          <li><a href="mailto:bestuur@meander1.nl">bestuur@meander1.nl</a></li>
+          <li><a href="mailto:beheer@meander1.nl">beheer@meander1.nl</a></li>
+          <li><a href="tel:0235631403">023 563 1403</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© Meander1 — Vereniging van Eigenaren</span>
+      <span data-i18n="foot.made">Onderhouden voor en door bewoners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

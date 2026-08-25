@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buurt — Meander1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <nav class="links" id="navLinks">
+      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active">NL</button>
+        <button id="btnEn">EN</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="buurt">
+  <div class="wrap buurt-grid">
+    <div class="reveal">
+      <span class="num mono">04</span>
+      <h2 style="margin-top:6px; font-size:clamp(30px,4vw,46px);" data-i18n="buurt.h2">De Staatsliedenbuurt</h2>
+      <p style="margin-top:20px;" data-i18n="buurt.p1">Meander1 ligt in de Staatsliedenbuurt, onderdeel van het voormalige stadsdeel Westerpark — vlak tegen de Jordaan aan. De buurt kende een minder glanzende periode, maar is door renovaties en nieuwbouw uitgegroeid tot een van de gewildere hoeken van de stad.</p>
+      <p data-i18n="buurt.p2">Vlakbij ligt het Westerpark, met de Westergasfabriek als culturele huiskamer voor markten, film en terrassen. Voor gemeentezaken en buurtinformatie verwijst het bestuur bewoners graag naar de officiële kanalen van stadsdeel en gemeente.</p>
+    </div>
+    <div class="buurt-map reveal">
+      <svg viewBox="0 0 320 260" width="100%" height="auto">
+        <rect width="320" height="260" fill="#F2EEE6"/>
+        <path d="M0,150 C60,120 100,180 160,140 C220,100 260,160 320,130" stroke="#3E5C63" stroke-width="10" fill="none" opacity="0.5"/>
+        <rect x="120" y="90" width="70" height="50" fill="#A8503E" opacity="0.85"/>
+        <circle cx="155" cy="115" r="4" fill="#F2EEE6"/>
+        <text x="130" y="170" class="mono" font-size="11" fill="#4B5158">Van der Palmkade</text>
+        <text x="20" y="40" class="mono" font-size="11" fill="#4B5158">Westerpark</text>
+        <text x="230" y="230" class="mono" font-size="11" fill="#4B5158">Jordaan →</text>
+      </svg>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MEANDER1</h3>
+        <p data-i18n="foot.p">Van der Palmkade, Amsterdam — een vereniging van eigenaren met 204 appartementen, gebouwd naar ontwerp van Rob Krier.</p>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.nav">Navigatie</div>
+        <ul>
+          <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
+          <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
+          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
+          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
+          <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.contact">Contact</div>
+        <ul>
+          <li><a href="mailto:bestuur@meander1.nl">bestuur@meander1.nl</a></li>
+          <li><a href="mailto:beheer@meander1.nl">beheer@meander1.nl</a></li>
+          <li><a href="tel:0235631403">023 563 1403</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© Meander1 — Vereniging van Eigenaren</span>
+      <span data-i18n="foot.made">Onderhouden voor en door bewoners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

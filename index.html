@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meander1 — Vereniging van Eigenaren</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <nav class="links" id="navLinks">
+      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active">NL</button>
+        <button id="btnEn">EN</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero no-border">
+  <div class="wrap hero-inner">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Van der Palmkade, Amsterdam</span>
+    <h1 data-i18n="hero.title">De bocht<br>in de kade</h1>
+    <p class="lede" data-i18n="hero.lede">Meander1 is genoemd naar zijn eigen vorm: een gebouw dat meebuigt met het water van de Kostverlorenvaart. 204 appartementen, twee binnentuinen en een plein zonder auto's — ontworpen door architect Rob Krier.</p>
+    <div class="hero-actions">
+      <a href="over.html" class="btn btn-primary" data-i18n="hero.cta1">Ontdek het gebouw</a>
+      <a href="contact.html" class="btn btn-secondary" data-i18n="hero.cta2">Neem contact op</a>
+    </div>
+
+    <svg class="meander-svg" viewBox="0 0 1180 220" preserveAspectRatio="none" aria-hidden="true">
+      <path class="line" d="M0,110 C120,20 200,20 320,90 C440,160 480,190 600,150 C720,110 760,40 880,60 C1000,80 1040,160 1180,120" />
+      <circle cx="0" cy="110" r="4"></circle>
+      <circle cx="320" cy="90" r="4"></circle>
+      <circle cx="600" cy="150" r="4"></circle>
+      <circle cx="880" cy="60" r="4"></circle>
+      <circle cx="1180" cy="120" r="4"></circle>
+      <text class="addr" x="6" y="98">Nr. 1</text>
+      <text class="addr" x="300" y="78">Nr. 55</text>
+      <text class="addr" x="575" y="176">Nr. 120</text>
+      <text class="addr" x="855" y="48">Nr. 165</text>
+      <text class="addr" x="1110" y="108">Nr. 204</text>
+    </svg>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MEANDER1</h3>
+        <p data-i18n="foot.p">Van der Palmkade, Amsterdam — een vereniging van eigenaren met 204 appartementen, gebouwd naar ontwerp van Rob Krier.</p>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.nav">Navigatie</div>
+        <ul>
+          <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
+          <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
+          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
+          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
+          <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.contact">Contact</div>
+        <ul>
+          <li><a href="mailto:bestuur@meander1.nl">bestuur@meander1.nl</a></li>
+          <li><a href="mailto:beheer@meander1.nl">beheer@meander1.nl</a></li>
+          <li><a href="tel:0235631403">023 563 1403</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© Meander1 — Vereniging van Eigenaren</span>
+      <span data-i18n="foot.made">Onderhouden voor en door bewoners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
