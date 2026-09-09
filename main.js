@@ -4,8 +4,8 @@ const dict = {
   "nav.galerij":{nl:"Galerij", en:"Gallery"},
   "nav.buurt":{nl:"Buurt", en:"Neighbourhood"},
   "nav.bestuur":{nl:"Bestuur & beheer", en:"Board & management"},
-  "nav.info":{nl:"Praktische info", en:"Practical info"},
   "nav.contact":{nl:"Contact & regelzaken", en:"Contact & arrangements"},
+  "nav.contactgegevens":{nl:"Contactgegevens", en:"Contact details"},
   "nav.aed":{nl:"AED & EHBO", en:"AED & first aid"},
   "nav.duurzaamheid":{nl:"Duurzaamheid", en:"Sustainability"},
   "nav.nieuws":{nl:"Nieuwsbrief", en:"Newsletter"},
@@ -35,18 +35,15 @@ const dict = {
   "wonen.c2.p":{nl:"Onder het gebouw liggen 200 parkeerplekken, individueel eigendom van bewoners, beveiligd met 34 HD-camera's. Toegangszenders worden verstrekt via Munnik VvE Beheer na een bestelformulier en betaling van de factuur. Let op bij een aanrijding met een elektrische auto: zet deze op straat en laat het accupakket controleren voordat je de garage weer inrijdt.", en:"Beneath the building are 200 parking spaces, individually owned by residents, secured with 34 HD cameras. Access remotes are issued through Munnik VvE Beheer after an order form and payment of the invoice. Note in case of a collision involving an electric car: move it onto the street and have the battery pack checked before re-entering the garage."},
   "wonen.c3.h":{nl:"Parkeerplek delen: Parqy", en:"Sharing a spot: Parqy"},
   "wonen.c3.p":{nl:"Met het puntensysteem van Parqy kunnen bewoners een vrije parkeerplek per kwartier verhuren aan of huren van medebewoners. Wie een plek beschikbaar stelt, krijgt eenmalig 400 punten als basissaldo. Aanmelden kan via parqy@meander1.nl.", en:"Parqy's points system lets residents rent out a free spot, per quarter hour, to fellow residents — or rent one themselves. Anyone who makes a spot available receives a one-off starting balance of 400 points. Sign up via parqy@meander1.nl."},
-  "wonen.c4.h":{nl:"Onderhoud & storingen", en:"Maintenance & faults"},
-  "wonen.c4.p":{nl:"Voor verstoppingen in privéleidingen en standleidingen heeft de VvE een all-in onderhoudscontract met RRS. Meld je zelf een andere loodgieter in, dan zijn de kosten voor eigen rekening.", en:"For blockages in private and shared pipes, the VvE has an all-in maintenance contract with RRS. If you call in a different plumber yourself, the costs are your own."},
-  "wonen.c5.h":{nl:"Liftstoringen", en:"Lift faults"},
-  "wonen.c5.p":{nl:"Bij een liftstoring bel je Skylift, de onderhoudspartij van de VvE voor de liften in het gebouw.", en:"In case of a lift fault, call Skylift, the VvE's maintenance provider for the building's lifts."},
-  "wonen.c6.h":{nl:"Garagedeur defect", en:"Garage door fault"},
-  "wonen.c6.p":{nl:"Werkt de toegangsdeur van de parkeergarage niet? Bel Feenstra — het telefoonnummer hangt bij het toegangshek.", en:"Is the parking garage access door not working? Call Feenstra — the phone number is posted at the access gate."},
   "wonen.c7.h":{nl:"AED bij de garage-ingang", en:"AED at the garage entrance"},
   "wonen.c7.p":{nl:"Bij de ingang van de parkeergarage hangt een AED voor noodgevallen. Bekijk de locatie en reanimatie-instructies.", en:"An AED for emergencies hangs at the parking garage entrance. See its location and resuscitation instructions."},
   "wonen.c7.link":{nl:"Naar AED-informatie", en:"Go to AED information"},
   "wonen.c8.h":{nl:"Duurzaamheid", en:"Sustainability"},
   "wonen.c8.p":{nl:"Zonnepanelen, LED-verlichting en tijdschakelaars zijn al gerealiseerd. De Duurzaamheidscommissie kijkt nu naar isolatie, laadpunten en de gastransitie.", en:"Solar panels, LED lighting and timers are already in place. The Sustainability Committee is now looking at insulation, charging points and the transition away from gas."},
   "wonen.c8.link":{nl:"Naar duurzaamheidspagina", en:"Go to sustainability page"},
+  "wonen.c9.h":{nl:"Storing melden", en:"Report a fault"},
+  "wonen.c9.p":{nl:"Verstopping, liftstoring of een defecte garagedeur? Alle nummers staan bij elkaar op de contactgegevens-pagina.", en:"A blockage, lift fault, or a broken garage door? All the numbers are together on the contact details page."},
+  "wonen.c9.link":{nl:"Naar contactgegevens", en:"Go to contact details"},
   "bestuur.h2":{nl:"Bestuur &<br>beheer", en:"Board &<br>management"},
   "bestuur.desc":{nl:"Wie de vereniging vertegenwoordigt en wie het dagelijks beheer voert.", en:"Who represents the association, and who runs day-to-day management."},
   "bestuur.p1":{nl:"Elke eigenaar van een appartement in Meander1 is automatisch lid van de VvE. De leden kiezen samen een bestuur, dat besluiten van de ledenvergadering uitvoert, een begroting opstelt en de belangen van de vereniging behartigt — met hulp van bewoners die hun eigen kennis inbrengen op thema's als financiën, techniek of duurzaamheid.", en:"Every apartment owner in Meander1 is automatically a member of the VvE. Members together elect a board, which carries out decisions from the general meeting, prepares a budget and represents the association's interests — supported by residents who contribute their own expertise on topics like finance, technical matters or sustainability."},
@@ -134,6 +131,10 @@ const dict = {
   "dir.huur.l3":{nl:"Wijkagent (algemeen politienummer)", en:"Neighbourhood officer (general police number)"},
   "contact.h2":{nl:"In gesprek<br>met het bestuur", en:"Get in touch<br>with the board"},
   "contact.desc":{nl:"Vragen over de vereniging, ideeën voor het gebouw of iets melden? Mail het bestuur.", en:"Questions about the association, ideas for the building, or something to report? Email the board."},
+  "contact.cg_link":{nl:"Op zoek naar een specifiek contactadres? Bekijk alle contactgegevens", en:"Looking for a specific contact? View all contact details"},
+  "cg.h2":{nl:"Contact-<br>gegevens", en:"Contact<br>details"},
+  "cg.desc":{nl:"Alle e-mailadressen en telefoonnummers van Meander1 op een rij.", en:"All of Meander1's email addresses and phone numbers, in one place."},
+  "cg.backlink":{nl:"Terug naar de paaltje-aanvraag", en:"Back to the bollard request"},
   "aed.h2":{nl:"AED &<br>EHBO", en:"AED &<br>first aid"},
   "aed.desc":{nl:"Wat te doen bij een acute hartstilstand.", en:"What to do in case of sudden cardiac arrest."},
   "aed.p1":{nl:"Bij de ingang van de parkeergarage, naast de deur naar huis 4A, hangt een AED-apparaat dat levensreddend kan zijn bij een hartstilstand. In de garage wijzen groene richtingsborden de weg ernaartoe.", en:"At the entrance to the parking garage, next to the door to house 4A, hangs an AED device that can be life-saving in case of cardiac arrest. Green directional signs in the garage point the way to it."},
@@ -162,7 +163,6 @@ const dict = {
   "aed.steps.l15":{nl:"Druk het masker altijd goed aan op het gezicht tijdens het beademen.", en:"Always press the mask firmly onto the face while ventilating."},
   "aed.steps.l16":{nl:"Druk goed aan en denk aan de kin omhoog.", en:"Press firmly and remember to tilt the chin up."},
   "aed.video.h":{nl:"Instructiefilm reanimatie & AED-gebruik", en:"Instruction video: resuscitation & AED use"},
-  "aed.video.link":{nl:"Bekijk de instructiefilm op YouTube", en:"Watch the instruction video on YouTube"},
   "duurz.h2":{nl:"Duurzaam-<br>heid", en:"Sustain-<br>ability"},
   "duurz.desc":{nl:"Hoe Meander1 werkt aan een lager energieverbruik.", en:"How Meander1 is working toward lower energy use."},
   "duurz.p1":{nl:"Duurzaamheid staat hoog in het vaandel bij Meander1. De Duurzaamheidscommissie heeft van het bestuur de opdracht gekregen om de haalbaarheid van diverse duurzaamheidsmaatregelen te onderzoeken en te kijken naar toekomstige veranderingen en wat die voor eigenaren gaan betekenen.", en:"Sustainability is a priority at Meander1. The Sustainability Committee has been tasked by the board with researching the feasibility of various sustainability measures, and with looking at future changes and what they mean for owners."},
@@ -212,11 +212,12 @@ function setLang(lang, persist){
 document.getElementById('btnNl').addEventListener('click', ()=>setLang('nl'));
 document.getElementById('btnEn').addEventListener('click', ()=>setLang('en'));
 
-// restore saved language on page load (defaults to nl)
+// apply the saved (or default) language on page load, so the dict is
+// always the source of truth rather than the static HTML placeholders
 (function(){
   let saved = 'nl';
   try{ saved = localStorage.getItem('meander1-lang') || 'nl'; }catch(e){}
-  if(saved === 'en') setLang('en', false);
+  setLang(saved, false);
 })();
 
 // paaltje form -> real submission via Formspree
@@ -281,7 +282,17 @@ mobileToggle.addEventListener('click', ()=>{
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
   navLinks.classList.remove('open');
   document.body.classList.remove('nav-open');
+  navLinks.querySelectorAll('.nav-item.sub-open').forEach(item=>item.classList.remove('sub-open'));
 }));
+
+// nav submenus: accordion on mobile, hover on desktop (CSS-only for desktop)
+navLinks.querySelectorAll('.sub-toggle').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    const item = btn.closest('.nav-item');
+    const isOpen = item.classList.toggle('sub-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+});
 
 // highlight the current page in the nav
 (function(){
