@@ -213,12 +213,12 @@
   .beheer-box{ background:var(--sand-deep); padding:36px; border-radius:var(--radius); border:1px solid var(--line); }
   .beheer-box h3{ font-size:20px; margin-bottom:14px;}
   .beheer-box p{ color:var(--ink-soft); font-size:15px; }
-  .beheer-box a.contact-line{
+  a.contact-line, div.contact-line{
     display:flex; justify-content:space-between; text-decoration:none;
     padding:12px 0; border-top:1px solid var(--line); font-size:14px; color:var(--ink);
   }
-  .beheer-box a.contact-line:hover{ color:var(--brick); }
-  .beheer-box a.contact-line .mono{ color:var(--ink-soft); }
+  a.contact-line:hover{ color:var(--brick); }
+  a.contact-line .mono, div.contact-line .mono{ color:var(--ink-soft); }
 
   /* ---------- form card ---------- */
   .form-card{
