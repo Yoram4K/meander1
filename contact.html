@@ -48,12 +48,24 @@
     <div class="form-card reveal" style="margin-bottom:72px;">
       <span class="num mono" style="color:var(--brick);">06.1</span>
       <h3 style="font-size:26px; margin:8px 0 6px;" data-i18n="form.h">Aanvraag: paal laten zakken</h3>
-      <p style="color:var(--ink-soft); font-size:15px; max-width:640px; margin-bottom:28px;" data-i18n="form.sub">Voor verhuizingen en zwaar transport (keukens, vloeren, piano's, verbouwmateriaal) kan de paal op de kade tijdelijk zakken. Vul onderstaand formulier in en verstuur direct — dien je aanvraag minimaal 24 uur van tevoren in.</p>
+      <p style="color:var(--ink-soft); font-size:15px; max-width:640px; margin-bottom:20px;" data-i18n="form.sub">Het plein van Meander1 is voetgangersgebied, afgesloten met een hydraulische paal. Voor verhuizingen en zwaar transport kun je toegang voor laden en lossen vragen. Vul minimaal 24 uur van tevoren onderstaand formulier in.</p>
+
+      <div style="max-width:640px; margin-bottom:28px;">
+        <p class="mono" style="font-size:12px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft); margin-bottom:10px;" data-i18n="form.rules.h">Spelregels</p>
+        <ul style="color:var(--ink-soft); font-size:14.5px; padding-left:20px; margin:0;">
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l1">Toegang kan tussen 8:00 en 18:00 uur. Laden en lossen mag 30 minuten; verhuizingen zo lang als nodig.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l2">Het plein verlaten kan altijd — rijd tot aan het paaltje, dat daalt automatisch.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l3">Amsterdammertjes mogen niet worden verwijderd: achter het Amsterdammertje is de weg boven de parkeergarage te zwak voor auto's.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l4">Personenauto's mogen niet op het plein. Parkeren op de kade mag niet, behalve voor bedrijven die voor de VvE werken.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l5">Parkeerruimte in onze garage kun je reserveren via Parqy.</li>
+          <li data-i18n="form.rules.l6">Uitzonderingen op deze regels kun je minstens een week van tevoren aanvragen bij bestuur@meander1.nl.</li>
+        </ul>
+      </div>
 
       <form id="paaltjeForm">
         <div class="form-grid">
           <div class="form-field">
-            <label for="pf-naam" data-i18n="form.naam">Naam</label>
+            <label for="pf-naam" data-i18n="form.naam">Volledige naam</label>
             <input id="pf-naam" name="naam" type="text" required>
           </div>
           <div class="form-field">
@@ -61,24 +73,32 @@
             <input id="pf-huisnr" name="huisnummer" type="text" required>
           </div>
           <div class="form-field">
+            <label for="pf-email" data-i18n="form.email">E-mailadres</label>
+            <input id="pf-email" name="email" type="email" required>
+          </div>
+          <div class="form-field">
             <label for="pf-tel" data-i18n="form.tel">Telefoonnummer</label>
             <input id="pf-tel" name="telefoon" type="tel" required>
           </div>
           <div class="form-field">
-            <label for="pf-datum" data-i18n="form.datum">Gewenste datum</label>
+            <label for="pf-bedrijf" data-i18n="form.bedrijf">Bedrijf</label>
+            <input id="pf-bedrijf" name="bedrijf" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-datum" data-i18n="form.datum">Datum</label>
             <input id="pf-datum" name="datum" type="date" required>
           </div>
           <div class="form-field">
-            <label for="pf-tijd" data-i18n="form.tijd">Tijdstip (tussen 8 – 18 uur)</label>
-            <input id="pf-tijd" name="tijdstip" type="time" required>
+            <label for="pf-aankomst-van" data-i18n="form.aankomst_van">Aankomst vanaf</label>
+            <input id="pf-aankomst-van" name="aankomst_vanaf" type="time" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-aankomst-tot" data-i18n="form.aankomst_tot">Aankomst tot</label>
+            <input id="pf-aankomst-tot" name="aankomst_tot" type="time" required>
           </div>
           <div class="form-field">
             <label for="pf-aantal" data-i18n="form.aantal">Aantal voertuigen</label>
             <input id="pf-aantal" name="aantal_voertuigen" type="number" min="1" value="1" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-bedrijf" data-i18n="form.bedrijf">Transportbedrijf</label>
-            <input id="pf-bedrijf" name="transportbedrijf" type="text">
           </div>
           <div class="form-field">
             <label for="pf-vaak" data-i18n="form.vaak">Hoe vaak op- en afrijden?</label>
@@ -91,6 +111,8 @@
         </div>
         <button type="submit" class="btn btn-primary form-submit" id="pf-submit" data-i18n="form.submit">Aanvraag versturen</button>
         <p class="form-status" id="pf-status" role="status" aria-live="polite"></p>
+        <p style="margin-top:20px; font-size:13.5px; color:var(--ink-soft);" data-i18n="form.note_multi">Meerdere toegangsmomenten nodig binnen dezelfde aanvraag? Vul dit formulier voor elk moment apart in, of mail direct naar paaltje@meander1.nl.</p>
+        <p style="margin-top:8px; font-size:13.5px; color:var(--ink-soft);" data-i18n="form.emergency">Spoedgeval tijdens de verhuizing? Bel Rein Schenk: 06 80 060 699.</p>
       </form>
     </div>
 
@@ -98,9 +120,12 @@
     <div class="contact-directory reveal">
       <div class="beheer-box">
         <h3 data-i18n="dir.beheer.h">Beheer &amp; onderhoud</h3>
+        <p data-i18n="dir.beheer.intro">Voor verstoppingen heeft de VvE een all-in onderhoudscontract met RRS — zij verhelpen alle verstoppingen van privéleidingen én standleidingen. Schakel je zelf een andere loodgieter in, dan zijn de kosten voor eigen rekening.</p>
         <a class="contact-line" href="mailto:beheer@meander1.nl"><span data-i18n="dir.beheer.l1">Munnik VvE Beheer</span><span class="mono">beheer@meander1.nl</span></a>
         <a class="contact-line" href="tel:0235631403"><span data-i18n="dir.beheer.l2">Telefoon (kantooruren)</span><span class="mono">023 563 1403</span></a>
         <a class="contact-line" href="tel:0203144444"><span data-i18n="dir.beheer.l3">RRS — verstoppingen</span><span class="mono">020 31 444 44</span></a>
+        <a class="contact-line" href="tel:0885051505"><span data-i18n="dir.beheer.l5">Skylift — liftstoringen</span><span class="mono">088 505 1 505</span></a>
+        <div class="contact-line" style="cursor:default;"><span data-i18n="dir.beheer.l6">Feenstra — garagedeur defect</span><span class="mono" data-i18n="dir.beheer.l6v">Nummer staat bij het toegangshek</span></div>
         <a class="contact-line" href="mailto:bestuur@meander1.nl"><span data-i18n="dir.beheer.l4">Technische Commissie</span><span class="mono">via bestuur@meander1.nl</span></a>
       </div>
 
@@ -124,6 +149,14 @@
         <a class="contact-line" href="mailto:feestcie@meander1.nl"><span data-i18n="dir.wonen.l1">Feestcommissie</span><span class="mono">feestcie@meander1.nl</span></a>
         <a class="contact-line" href="mailto:duurzaamheid@meander1.nl"><span data-i18n="dir.wonen.l2">Duurzaamheid</span><span class="mono">duurzaamheid@meander1.nl</span></a>
         <div class="contact-line" style="cursor:default;"><span data-i18n="dir.wonen.l3">Meanderburen (besloten groep)</span><span class="mono" data-i18n="dir.wonen.l3v">Zoek "Meanderburen" op Facebook</span></div>
+        <p style="margin-top:14px; font-size:13px;" data-i18n="dir.wonen.l3.disclaimer">Let op: deze groep is geen communicatiekanaal van of naar het bestuur — leden posten op persoonlijke titel. De beheerder laat alleen bewoners toe en verwijdert leden die vertrekken.</p>
+      </div>
+
+      <div class="beheer-box">
+        <h3 data-i18n="dir.veiligheid.h">Veiligheid &amp; informatie</h3>
+        <a class="contact-line" href="aed.html"><span data-i18n="dir.veiligheid.l1">AED — reanimatie-instructies</span><span class="mono">aed.html</span></a>
+        <a class="contact-line" href="duurzaamheid.html"><span data-i18n="dir.veiligheid.l2">Duurzaamheid bij Meander1</span><span class="mono">duurzaamheid.html</span></a>
+        <a class="contact-line" href="nieuws.html"><span data-i18n="dir.veiligheid.l3">Nieuwsbrief-archief</span><span class="mono">nieuws.html</span></a>
       </div>
 
       <div class="beheer-box" style="grid-column:1/-1;">
@@ -164,6 +197,9 @@
           <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
           <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
+          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
+          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
         </ul>
       </div>
       <div>
