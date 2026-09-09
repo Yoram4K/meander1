@@ -296,17 +296,7 @@ mobileToggle.addEventListener('click', ()=>{
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{
   navLinks.classList.remove('open');
   document.body.classList.remove('nav-open');
-  navLinks.querySelectorAll('.nav-item.sub-open').forEach(item=>item.classList.remove('sub-open'));
 }));
-
-// nav submenus: accordion on mobile, hover on desktop (CSS-only for desktop)
-navLinks.querySelectorAll('.sub-toggle').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    const item = btn.closest('.nav-item');
-    const isOpen = item.classList.toggle('sub-open');
-    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-});
 
 // highlight the current page in the nav
 (function(){
