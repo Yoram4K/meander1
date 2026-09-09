@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contactgegevens — Meander1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <nav class="links" id="navLinks">
+      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+      <div class="nav-item has-sub">
+        <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Wonen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a>
+          <a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a>
+        </div>
+      </div>
+      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+      <div class="nav-item has-sub">
+        <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Bestuur" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Contact" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a>
+        </div>
+      </div>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active">NL</button>
+        <button id="btnEn">EN</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="contactgegevens">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="cg.h2">Contact-<br>gegevens</h2>
+      </div>
+      <p class="desc" data-i18n="cg.desc">Alle e-mailadressen en telefoonnummers van Meander1 op een rij.</p>
+    </div>
+
+    <div class="contact-directory reveal">
+      <div class="beheer-box">
+        <h3 data-i18n="dir.beheer.h">Beheer &amp; onderhoud</h3>
+        <p data-i18n="dir.beheer.intro">Voor verstoppingen heeft de VvE een all-in onderhoudscontract met RRS — zij verhelpen alle verstoppingen van privéleidingen én standleidingen. Schakel je zelf een andere loodgieter in, dan zijn de kosten voor eigen rekening.</p>
+        <a class="contact-line" href="mailto:beheer@meander1.nl"><span data-i18n="dir.beheer.l1">Munnik VvE Beheer</span><span class="mono">beheer@meander1.nl</span></a>
+        <a class="contact-line" href="tel:0235631403"><span data-i18n="dir.beheer.l2">Telefoon (kantooruren)</span><span class="mono">023 563 1403</span></a>
+        <a class="contact-line" href="tel:0203144444"><span data-i18n="dir.beheer.l3">RRS — verstoppingen</span><span class="mono">020 31 444 44</span></a>
+        <a class="contact-line" href="tel:0885051505"><span data-i18n="dir.beheer.l5">Skylift — liftstoringen</span><span class="mono">088 505 1 505</span></a>
+        <div class="contact-line" style="cursor:default;"><span data-i18n="dir.beheer.l6">Feenstra — garagedeur defect</span><span class="mono" data-i18n="dir.beheer.l6v">Nummer staat bij het toegangshek</span></div>
+        <a class="contact-line" href="mailto:bestuur@meander1.nl"><span data-i18n="dir.beheer.l4">Technische Commissie</span><span class="mono">via bestuur@meander1.nl</span></a>
+      </div>
+
+      <div class="beheer-box">
+        <h3 data-i18n="dir.bestuur.h">Bestuur &amp; vereniging</h3>
+        <a class="contact-line" href="mailto:bestuur@meander1.nl"><span data-i18n="dir.bestuur.l1">Bestuur — beleid &amp; ALV</span><span class="mono">bestuur@meander1.nl</span></a>
+        <a class="contact-line" href="mailto:webmaster@meander1.nl"><span data-i18n="dir.bestuur.l2">Webmaster — over deze site</span><span class="mono">webmaster@meander1.nl</span></a>
+        <a class="contact-line" href="mailto:camera@meander1.nl"><span data-i18n="dir.bestuur.l3">Camerabeelden veiligstellen</span><span class="mono">camera@meander1.nl</span></a>
+      </div>
+
+      <div class="beheer-box">
+        <h3 data-i18n="dir.plein.h">Plein, parkeren &amp; groen</h3>
+        <a class="contact-line" href="mailto:paaltje@meander1.nl"><span data-i18n="dir.plein.l1">Paaltje — zie formulier</span><span class="mono">paaltje@meander1.nl</span></a>
+        <a class="contact-line" href="mailto:parqy@meander1.nl"><span data-i18n="dir.plein.l2">Parqy — parkeerplek delen</span><span class="mono">parqy@meander1.nl</span></a>
+        <a class="contact-line" href="mailto:toegang@meander1.nl"><span data-i18n="dir.plein.l3">Toegangstags &amp; zenders</span><span class="mono">toegang@meander1.nl</span></a>
+        <a class="contact-line" href="mailto:groen&amp;plein@meander1.nl"><span data-i18n="dir.plein.l4">Groen &amp; plein</span><span class="mono">groen&amp;plein@meander1.nl</span></a>
+      </div>
+
+      <div class="beheer-box">
+        <h3 data-i18n="dir.wonen.h">Wonen &amp; gemeenschap</h3>
+        <a class="contact-line" href="mailto:feestcie@meander1.nl"><span data-i18n="dir.wonen.l1">Feestcommissie</span><span class="mono">feestcie@meander1.nl</span></a>
+        <a class="contact-line" href="mailto:duurzaamheid@meander1.nl"><span data-i18n="dir.wonen.l2">Duurzaamheid</span><span class="mono">duurzaamheid@meander1.nl</span></a>
+        <div class="contact-line" style="cursor:default;"><span data-i18n="dir.wonen.l3">Meanderburen (besloten groep)</span><span class="mono" data-i18n="dir.wonen.l3v">Zoek "Meanderburen" op Facebook</span></div>
+        <p style="margin-top:14px; font-size:13px;" data-i18n="dir.wonen.l3.disclaimer">Let op: deze groep is geen communicatiekanaal van of naar het bestuur — leden posten op persoonlijke titel. De beheerder laat alleen bewoners toe en verwijdert leden die vertrekken.</p>
+      </div>
+
+      <div class="beheer-box">
+        <h3 data-i18n="dir.veiligheid.h">Veiligheid &amp; informatie</h3>
+        <a class="contact-line" href="aed.html"><span data-i18n="dir.veiligheid.l1">AED — reanimatie-instructies</span><span class="mono">aed.html</span></a>
+        <a class="contact-line" href="duurzaamheid.html"><span data-i18n="dir.veiligheid.l2">Duurzaamheid bij Meander1</span><span class="mono">duurzaamheid.html</span></a>
+        <a class="contact-line" href="nieuws.html"><span data-i18n="dir.veiligheid.l3">Nieuwsbrief-archief</span><span class="mono">nieuws.html</span></a>
+      </div>
+
+      <div class="beheer-box" style="grid-column:1/-1;">
+        <h3 data-i18n="dir.huur.h">Huurder in Meander1?</h3>
+        <p style="margin-bottom:8px;" data-i18n="dir.huur.p">Meander1 is een gemengd complex — naast eigenaren wonen er ook huurders van woningcorporatie Stadgenoot. Voor huurderszaken kun je rechtstreeks bij hen terecht; de VvE gaat niet over huurcontracten of reparaties in huurwoningen.</p>
+        <a class="contact-line" href="mailto:info@stadgenoot.nl"><span data-i18n="dir.huur.l1">Stadgenoot — klantenservice</span><span class="mono">info@stadgenoot.nl</span></a>
+        <a class="contact-line" href="tel:0205118000"><span data-i18n="dir.huur.l2">Stadgenoot — telefoon</span><span class="mono">020 511 8000</span></a>
+        <a class="contact-line" href="tel:09008844"><span data-i18n="dir.huur.l3">Wijkagent (algemeen politienummer)</span><span class="mono">0900 8844</span></a>
+      </div>
+    </div>
+
+    <p style="margin-top:32px; font-size:14px;"><a href="contact.html" class="mono" style="text-decoration:underline;" data-i18n="cg.backlink">Terug naar de paaltje-aanvraag</a></p>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MEANDER1</h3>
+        <p data-i18n="foot.p">Van der Palmkade, Amsterdam — een vereniging van eigenaren met 204 appartementen, gebouwd naar ontwerp van Rob Krier.</p>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.nav">Navigatie</div>
+        <ul>
+          <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
+          <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
+          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
+          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
+          <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+          <li><a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a></li>
+          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
+          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
+          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.contact">Contact</div>
+        <ul>
+          <li><a href="mailto:bestuur@meander1.nl">bestuur@meander1.nl</a></li>
+          <li><a href="mailto:beheer@meander1.nl">beheer@meander1.nl</a></li>
+          <li><a href="tel:0235631403">023 563 1403</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© Meander1 — Vereniging van Eigenaren</span>
+      <span data-i18n="foot.made">Onderhouden voor en door bewoners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
