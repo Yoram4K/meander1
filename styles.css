@@ -82,6 +82,17 @@
   .brand{ text-decoration:none; }
   body.nav-open{ overflow:hidden; }
 
+  nav.links a.portal-link{
+    padding:8px 18px; border:1px solid var(--ink); border-radius:20px;
+    font-family:'IBM Plex Mono', monospace; color:var(--ink);
+  }
+  nav.links a.portal-link:hover, nav.links a.portal-link:focus-visible{
+    background:var(--ink); color:var(--sand); border-color:var(--ink);
+  }
+  @media (max-width:860px){
+    nav.links a.portal-link{ margin-top:8px; }
+  }
+
   .lang-toggle{
     display:flex; border:1px solid var(--ink); border-radius:20px; overflow:hidden;
     font-family:'IBM Plex Mono', monospace; font-size:12px;
