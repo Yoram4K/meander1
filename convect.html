@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convect — Meander1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <nav class="links" id="navLinks">
+      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+      <a href="https://184.convect.nl/" target="_blank" rel="noopener" class="portal-link" data-i18n="nav.portal">Bewonersportaal</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active">NL</button>
+        <button id="btnEn">EN</button>
+      </div>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="convect">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="convect.h2">Convect —<br>bewonersportaal</h2>
+      </div>
+      <p class="desc" data-i18n="convect.desc">Het besloten VvE-portaal voor eigenaren van Meander1.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="reveal">
+        <p data-i18n="convect.p1">Munnik VvE Beheer werkt voor Meander1 met Convect: een besloten website en app, alleen voor eigenaren — niet voor huurders. Elk lid van de VvE heeft een eigen inlog waarmee je zowel op de website als in de app kunt inloggen.</p>
+        <p data-i18n="convect.p2">Binnen Convect vind je alle correspondentie, VvE-stukken en financiële stukken, zoals de splitsingsakte, het huishoudelijk reglement en de notulen van de jaarvergaderingen. Via de app kun je bovendien reparatieverzoeken indienen, stemmen tijdens of voorafgaand aan de Algemene Ledenvergadering, een automatische incasso instellen en declaraties indienen.</p>
+        <p data-i18n="convect.p3">Nieuwe leden ontvangen via de notaris een welkomstbrief met inloggegevens en instructies. Geen inloggegevens ontvangen? Neem dan contact op met Munnik VvE Beheer.</p>
+        <p style="margin-top:24px;"><a href="https://184.convect.nl/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="convect.cta">Naar Convect</a></p>
+      </div>
+      <div class="fact-panel reveal">
+        <div class="fact"><span class="k mono" data-i18n="convect.fact.wie">Voor wie</span><span class="v" data-i18n="convect.fact.wie.v">Alleen eigenaren, niet huurders</span></div>
+        <div class="fact"><span class="k mono" data-i18n="convect.fact.wachtwoord">Wachtwoord vergeten</span><span class="v" data-i18n="convect.fact.wachtwoord.v">E-mailadres invullen bij inloggen</span></div>
+        <div class="fact"><span class="k mono" data-i18n="convect.fact.koppelcode">Geen inloggegevens?</span><span class="v" data-i18n="convect.fact.koppelcode.v">Nieuwe koppelcode aanvragen bij Munnik Beheer</span></div>
+      </div>
+    </div>
+
+    <div class="beheer-box reveal" style="margin-top:56px; max-width:720px;">
+      <h3 data-i18n="convect.reminders.h">Betaalherinneringen voorkomen</h3>
+      <p data-i18n="convect.reminders.p">De maandelijkse VvE-bijdrage moet vóór de eerste van de maand zijn voldaan. Ben je te laat, dan verstuurt VvE Services namens de VvE een betaalherinnering — € 5 per e-mail en € 10 per brief (excl. btw) per keer. Een automatische incasso instellen (het makkelijkst via de Convect-app) voorkomt dit en bespaart de VvE kosten.</p>
+      <a class="contact-line" href="mailto:beheer@meander1.nl"><span>Munnik VvE Beheer</span><span class="mono">beheer@meander1.nl</span></a>
+      <a class="contact-line" href="tel:0235631403"><span>Telefoon</span><span class="mono">023 563 1403</span></a>
+    </div>
+
+    <div class="reveal" style="margin-top:56px; max-width:640px;">
+      <h3 style="font-size:22px; margin-bottom:18px;" data-i18n="convect.manuals.h">Handleidingen</h3>
+      <a class="contact-line" href="https://ledenportaal.convect.nl/handleidingen/handleiding:-mobiele-applicatie/" target="_blank" rel="noopener"><span data-i18n="convect.manuals.l1">Convect-app installeren</span><span class="mono">↗</span></a>
+      <a class="contact-line" href="https://ledenportaal.convect.nl/handleidingen/handleiding:-koppelen-en-inloggen" target="_blank" rel="noopener"><span data-i18n="convect.manuals.l2">Koppelen en inloggen</span><span class="mono">↗</span></a>
+      <a class="contact-line" href="https://ledenportaal.convect.nl/handleidingen/handleiding:-mobiele-applicatie/incasso-machtiging/" target="_blank" rel="noopener"><span data-i18n="convect.manuals.l3">Automatische incasso instellen</span><span class="mono">↗</span></a>
+      <a class="contact-line" href="https://ledenportaal.convect.nl/handleidingen/handleiding:-mobiele-applicatie/reparatieverzoek-indienen-via-de-app/" target="_blank" rel="noopener"><span data-i18n="convect.manuals.l4">Reparatieverzoek indienen</span><span class="mono">↗</span></a>
+      <a class="contact-line" href="https://ledenportaal.convect.nl/handleidingen/handleiding:-mobiele-applicatie/digitaal-stemmen-via-de-app/" target="_blank" rel="noopener"><span data-i18n="convect.manuals.l5">Digitaal stemmen</span><span class="mono">↗</span></a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>MEANDER1</h3>
+        <p data-i18n="foot.p">Van der Palmkade, Amsterdam — een vereniging van eigenaren met 204 appartementen, gebouwd naar ontwerp van Rob Krier.</p>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.nav">Navigatie</div>
+        <ul>
+          <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
+          <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
+          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
+          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
+          <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
+          <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
+          <li><a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a></li>
+          <li><a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a></li>
+          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
+          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
+          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="col-title" data-i18n="foot.contact">Contact</div>
+        <ul>
+          <li><a href="mailto:bestuur@meander1.nl">bestuur@meander1.nl</a></li>
+          <li><a href="mailto:beheer@meander1.nl">beheer@meander1.nl</a></li>
+          <li><a href="tel:0235631403">023 563 1403</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© Meander1 — Vereniging van Eigenaren</span>
+      <span data-i18n="foot.made">Onderhouden voor en door bewoners</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
