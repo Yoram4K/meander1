@@ -82,36 +82,6 @@
   .brand{ text-decoration:none; }
   body.nav-open{ overflow:hidden; }
 
-  /* ---------- nav submenus ---------- */
-  .nav-item{ position:relative; display:flex; align-items:center; }
-  .sub-toggle{
-    display:flex; align-items:center; justify-content:center;
-    background:none; border:none; cursor:pointer; padding:4px; margin-left:2px;
-    color:var(--ink-soft);
-  }
-  .sub-toggle svg{ width:13px; height:13px; transition:transform .2s; }
-  .submenu{ display:none; }
-  .submenu a{ text-decoration:none; }
-
-  @media (min-width:861px){
-    .submenu{
-      flex-direction:column; position:absolute; top:100%; left:0; margin-top:12px;
-      min-width:220px; background:var(--sand); border:1px solid var(--line);
-      border-radius:var(--radius); box-shadow:0 12px 28px rgba(34,38,43,0.14);
-      padding:8px 0; z-index:60;
-    }
-    .submenu::before{
-      content:''; position:absolute; left:0; right:0; bottom:100%; height:12px;
-    }
-    .nav-item:hover .submenu, .nav-item:focus-within .submenu{ display:flex; }
-    .submenu a{
-      padding:11px 20px; font-size:13px; text-transform:uppercase; letter-spacing:0.06em;
-      color:var(--ink-soft); border-bottom:none;
-    }
-    .submenu a:hover, .submenu a:focus-visible, .submenu a.active{ color:var(--brick); background:var(--sand-deep); }
-    .sub-toggle{ pointer-events:none; }
-  }
-
   .lang-toggle{
     display:flex; border:1px solid var(--ink); border-radius:20px; overflow:hidden;
     font-family:'IBM Plex Mono', monospace; font-size:12px;
@@ -138,14 +108,6 @@
     nav.links.open{transform:translateX(0);}
     nav.links a{font-size:18px;}
     .mobile-toggle{display:block;}
-
-    .nav-item{ flex-direction:column; align-items:flex-start; width:100%; position:relative; }
-    .nav-item > a{ padding-right:36px; }
-    .sub-toggle{ position:absolute; top:-2px; right:0; padding:8px; }
-    .submenu{ flex-direction:column; width:100%; margin-top:16px; padding-left:18px; gap:16px; }
-    .nav-item.sub-open .submenu{ display:flex; }
-    .nav-item.sub-open .sub-toggle svg{ transform:rotate(180deg); }
-    .submenu a{ font-size:15px; color:var(--ink-soft); }
   }
 
   /* ---------- hero ---------- */
