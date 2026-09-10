@@ -128,7 +128,7 @@
   .portal-link-mobile{ display:none; }
   @media (max-width:860px){
     .portal-link-desktop{ display:none; }
-    .portal-link-mobile{ display:inline-flex; margin-top:8px; padding:13px 20px; font-size:13px; }
+    nav.links a.portal-link-mobile{ display:inline-flex; margin-top:8px; padding:11px 20px; font-size:12px; }
   }
 
   .lang-toggle{
