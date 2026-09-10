@@ -15,12 +15,50 @@
   <div class="wrap nav">
     <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
-      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
-      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
-      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
-      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
-      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+      <div class="nav-item has-sub">
+        <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Over het gebouw" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="gebouw.html" data-i18n="nav.gebouw">Het gebouw</a>
+          <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+          <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Wonen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="voorzieningen.html" data-i18n="nav.voorzieningen">Voorzieningen</a>
+          <a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a>
+          <a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Bestuur &amp; beheer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="bestuursinfo.html" data-i18n="nav.bestuursinfo">Bestuur &amp; Munnik Beheer</a>
+          <a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a>
+          <a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Contact &amp; regelzaken" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="ingesprek.html" data-i18n="nav.ingesprek">In gesprek met het bestuur</a>
+          <a href="paaltje.html" data-i18n="nav.paaltje">Aanvraag: paal laten zakken</a>
+          <a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a>
+        </div>
+      </div>
       <a href="https://184.convect.nl/" target="_blank" rel="noopener" class="portal-link portal-link-mobile" data-i18n="nav.portal">Bewonersportaal</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
@@ -40,33 +78,30 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="num mono">05</span>
-        <h2 data-i18n="bestuur.h2">Bestuur &amp;<br>beheer</h2>
+        <h2 data-i18n="bestuur.hub.h2">Bestuur &amp;<br>beheer</h2>
       </div>
-      <p class="desc" data-i18n="bestuur.desc">Wie de vereniging vertegenwoordigt en wie het dagelijks beheer voert.</p>
+      <p class="desc" data-i18n="bestuur.hub.desc">Wie de vereniging vertegenwoordigt en wie het dagelijks beheer voert.</p>
     </div>
-
-    <div class="board-wrap">
-      <div class="reveal">
-        <p style="color:var(--ink-soft); font-size:16px; margin-bottom:24px;" data-i18n="bestuur.p1">Elke eigenaar van een appartement in Meander1 is automatisch lid van de VvE. De leden kiezen samen een bestuur, dat besluiten van de ledenvergadering uitvoert, een begroting opstelt en de belangen van de vereniging behartigt — met hulp van bewoners die hun eigen kennis inbrengen op thema's als financiën, techniek of duurzaamheid.</p>
-        <ul class="board-list">
-          <li><span data-i18n="bestuur.p1.name">Henk Helder</span><span class="role mono" data-i18n="bestuur.p1.role">Voorzitter</span></li>
-          <li><span data-i18n="bestuur.p2.name">Rikky Van Osch</span><span class="role mono" data-i18n="bestuur.p2.role">Bestuurslid & penningmeester</span></li>
-          <li><span data-i18n="bestuur.p3.name">Jolanda Bakker</span><span class="role mono" data-i18n="bestuur.p3.role">Bestuurslid</span></li>
-        </ul>
-        <p style="color:var(--ink-soft); font-size:14px; margin-top:20px;" data-i18n="bestuur.note">Het bestuur is een afvaardiging van drie bewoners, gekozen door en uit de vereniging van eigenaren.</p>
-        <a class="contact-line" href="mailto:bestuur@meander1.nl" style="margin-top:8px;"><span data-i18n="beheer.bestuur">Bestuur</span><span class="mono">bestuur@meander1.nl</span></a>
+  </div>
+  <div class="wrap" style="padding:0;">
+    <div class="card-grid reveal">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3 data-i18n="bestuur.hub.c1.h">Bestuur &amp; Munnik Beheer</h3>
+        <p data-i18n="bestuur.hub.c1.p">Het bestuur en het dagelijks beheer door Munnik.</p>
+        <p style="margin-top:14px;"><a href="bestuursinfo.html" class="mono" style="text-decoration:underline;" data-i18n="bestuur.hub.c1.link">Naar bestuur &amp; beheer</a></p>
       </div>
-
-      <div class="beheer-box reveal">
-        <h3 data-i18n="beheer.h">Munnik VvE Beheer</h3>
-        <p data-i18n="beheer.p">Het dagelijks beheer van de VvE is uitbesteed aan Munnik Beheer: administratie, technisch onderhoud en het eerste aanspreekpunt bij klachten over gemeenschappelijke ruimtes, lekkages, liftstoringen en bestrating.</p>
-        <p style="margin-top:14px;" data-i18n="beheer.p2">Munnik Beheer werkt voor eigenaren (niet voor huurders) met het besloten portaal Convect — als website en als app. Daarin staan de agenda van de Algemene Ledenvergadering, vergaderstukken, de splitsingsakte, het huishoudelijk reglement en andere belangrijke documenten. Nieuwe eigenaren ontvangen via de notaris een welkomstbrief met inloggegevens; lukt inloggen niet, neem dan contact op met Munnik Beheer.</p>
-        <a class="contact-line" href="mailto:beheer@meander1.nl"><span data-i18n="beheer.email">E-mail</span><span class="mono">beheer@meander1.nl</span></a>
-        <a class="contact-line" href="tel:0235631403"><span data-i18n="beheer.phone">Telefoon</span><span class="mono">023 563 1403</span></a>
-        <a class="contact-line" href="https://www.meander1.nl/wp-content/uploads/2025/07/Incassoprotocol-Meander1-per-1-4-2025.pdf" target="_blank" rel="noopener"><span data-i18n="beheer.incasso">Incassoprocedure (PDF)</span><span class="mono">PDF ↗</span></a>
-        <a class="contact-line" href="convect.html"><span data-i18n="nav.convect">Convect uitgelegd</span><span class="mono">convect.html</span></a>
-        <a class="contact-line" href="https://184.convect.nl/" target="_blank" rel="noopener"><span data-i18n="nav.portal">Bewonersportaal</span><span class="mono">184.convect.nl ↗</span></a>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/></svg>
+        <h3 data-i18n="bestuur.hub.c2.h">Convect uitgelegd</h3>
+        <p data-i18n="bestuur.hub.c2.p">Het besloten portaal voor eigenaren.</p>
+        <p style="margin-top:14px;"><a href="convect.html" class="mono" style="text-decoration:underline;" data-i18n="bestuur.hub.c2.link">Naar Convect</a></p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg>
+        <h3 data-i18n="bestuur.hub.c3.h">Nieuwsbrief</h3>
+        <p data-i18n="bestuur.hub.c3.p">Lees de laatste nieuwsbrieven van het bestuur.</p>
+        <p style="margin-top:14px;"><a href="nieuws.html" class="mono" style="text-decoration:underline;" data-i18n="bestuur.hub.c3.link">Naar het archief</a></p>
       </div>
     </div>
   </div>
@@ -83,15 +118,8 @@
         <ul>
           <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
           <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
-          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
-          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
           <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
-          <li><a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a></li>
-          <li><a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a></li>
-          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
-          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
-          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
         </ul>
       </div>
       <div>

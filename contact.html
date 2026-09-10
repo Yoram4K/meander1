@@ -15,12 +15,50 @@
   <div class="wrap nav">
     <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
-      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
-      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
-      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
-      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
-      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+      <div class="nav-item has-sub">
+        <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Over het gebouw" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="gebouw.html" data-i18n="nav.gebouw">Het gebouw</a>
+          <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+          <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Wonen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="voorzieningen.html" data-i18n="nav.voorzieningen">Voorzieningen</a>
+          <a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a>
+          <a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Bestuur &amp; beheer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="bestuursinfo.html" data-i18n="nav.bestuursinfo">Bestuur &amp; Munnik Beheer</a>
+          <a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a>
+          <a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Contact &amp; regelzaken" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="ingesprek.html" data-i18n="nav.ingesprek">In gesprek met het bestuur</a>
+          <a href="paaltje.html" data-i18n="nav.paaltje">Aanvraag: paal laten zakken</a>
+          <a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a>
+        </div>
+      </div>
       <a href="https://184.convect.nl/" target="_blank" rel="noopener" class="portal-link portal-link-mobile" data-i18n="nav.portal">Bewonersportaal</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
@@ -36,100 +74,36 @@
   </div>
 </header>
 
-<section id="info">
+<section id="contact">
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="num mono">06</span>
-        <h2 data-i18n="info.h2">Contact &amp;<br>regelzaken</h2>
+        <h2 data-i18n="contact.hub.h2">Contact &amp;<br>regelzaken</h2>
       </div>
-      <p class="desc" data-i18n="info.desc">Alles wat je moet weten om snel iets te regelen, te melden of aan te vragen.</p>
-    </div>
-
-    <!-- Paaltje-aanvraag: functional form -->
-    <div class="form-card reveal" style="margin-bottom:72px;">
-      <span class="num mono" style="color:var(--brick);">06.1</span>
-      <h3 style="font-size:26px; margin:8px 0 6px;" data-i18n="form.h">Aanvraag: paal laten zakken</h3>
-      <p style="color:var(--ink-soft); font-size:15px; max-width:640px; margin-bottom:20px;" data-i18n="form.sub">Het plein van Meander1 is voetgangersgebied, afgesloten met een hydraulische paal. Voor verhuizingen en zwaar transport kun je toegang voor laden en lossen vragen. Vul minimaal 24 uur van tevoren onderstaand formulier in.</p>
-
-      <div style="max-width:640px; margin-bottom:28px;">
-        <p class="mono" style="font-size:12px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft); margin-bottom:10px;" data-i18n="form.rules.h">Spelregels</p>
-        <ul style="color:var(--ink-soft); font-size:14.5px; padding-left:20px; margin:0;">
-          <li style="margin-bottom:8px;" data-i18n="form.rules.l1">Toegang kan tussen 8:00 en 18:00 uur. Laden en lossen mag 30 minuten; verhuizingen zo lang als nodig.</li>
-          <li style="margin-bottom:8px;" data-i18n="form.rules.l2">Het plein verlaten kan altijd — rijd tot aan het paaltje, dat daalt automatisch.</li>
-          <li style="margin-bottom:8px;" data-i18n="form.rules.l3">Amsterdammertjes mogen niet worden verwijderd: achter het Amsterdammertje is de weg boven de parkeergarage te zwak voor auto's.</li>
-          <li style="margin-bottom:8px;" data-i18n="form.rules.l4">Personenauto's mogen niet op het plein. Parkeren op de kade mag niet, behalve voor bedrijven die voor de VvE werken.</li>
-          <li style="margin-bottom:8px;" data-i18n="form.rules.l5">Parkeerruimte in onze garage kun je reserveren via Parqy.</li>
-          <li data-i18n="form.rules.l6">Uitzonderingen op deze regels kun je minstens een week van tevoren aanvragen bij bestuur@meander1.nl.</li>
-        </ul>
-      </div>
-
-      <form id="paaltjeForm">
-        <div class="form-grid">
-          <div class="form-field">
-            <label for="pf-naam" data-i18n="form.naam">Volledige naam</label>
-            <input id="pf-naam" name="naam" type="text" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-huisnr" data-i18n="form.huisnr">Huisnummer</label>
-            <input id="pf-huisnr" name="huisnummer" type="text" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-email" data-i18n="form.email">E-mailadres</label>
-            <input id="pf-email" name="email" type="email" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-tel" data-i18n="form.tel">Telefoonnummer</label>
-            <input id="pf-tel" name="telefoon" type="tel" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-bedrijf" data-i18n="form.bedrijf">Bedrijf</label>
-            <input id="pf-bedrijf" name="bedrijf" type="text" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-datum" data-i18n="form.datum">Datum</label>
-            <input id="pf-datum" name="datum" type="date" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-aankomst-van" data-i18n="form.aankomst_van">Aankomst vanaf</label>
-            <input id="pf-aankomst-van" name="aankomst_vanaf" type="time" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-aankomst-tot" data-i18n="form.aankomst_tot">Aankomst tot</label>
-            <input id="pf-aankomst-tot" name="aankomst_tot" type="time" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-aantal" data-i18n="form.aantal">Aantal voertuigen</label>
-            <input id="pf-aantal" name="aantal_voertuigen" type="number" min="1" value="1" required>
-          </div>
-          <div class="form-field">
-            <label for="pf-vaak" data-i18n="form.vaak">Hoe vaak op- en afrijden?</label>
-            <input id="pf-vaak" name="frequentie" type="text" placeholder="bv. 1x heen, 1x terug">
-          </div>
-          <div class="form-field full">
-            <label for="pf-reden" data-i18n="form.reden">Reden van bezoek</label>
-            <textarea id="pf-reden" name="reden" rows="3" placeholder="bv. verhuizing, levering nieuwe keuken, verbouwing" required></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary form-submit" id="pf-submit" data-i18n="form.submit">Aanvraag versturen</button>
-        <p class="form-status" id="pf-status" role="status" aria-live="polite"></p>
-        <p style="margin-top:20px; font-size:13.5px; color:var(--ink-soft);" data-i18n="form.note_multi">Meerdere toegangsmomenten nodig binnen dezelfde aanvraag? Vul dit formulier voor elk moment apart in, of mail direct naar paaltje@meander1.nl.</p>
-        <p style="margin-top:8px; font-size:13.5px; color:var(--ink-soft);" data-i18n="form.emergency">Spoedgeval tijdens de verhuizing? Bel Rein Schenk: 06 80 060 699.</p>
-      </form>
+      <p class="desc" data-i18n="contact.hub.desc">Alles om iets te regelen, te melden of aan te vragen.</p>
     </div>
   </div>
-</section>
-<section id="contact" class="no-border">
-
-  <div class="wrap">
-    <div class="section-head" style="margin-bottom:0;">
-      <div>
-        <span class="num mono">07</span>
-        <h2 data-i18n="contact.h2">In gesprek<br>met het bestuur</h2>
+  <div class="wrap" style="padding:0;">
+    <div class="card-grid reveal">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <h3 data-i18n="contact.hub.c1.h">In gesprek met het bestuur</h3>
+        <p data-i18n="contact.hub.c1.p">Vragen, ideeën of iets melden? Mail het bestuur.</p>
+        <p style="margin-top:14px;"><a href="ingesprek.html" class="mono" style="text-decoration:underline;" data-i18n="contact.hub.c1.link">Naar het bestuur mailen</a></p>
       </div>
-      <p class="desc" data-i18n="contact.desc">Vragen over de vereniging, ideeën voor het gebouw of iets melden? Mail het bestuur.</p>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        <h3 data-i18n="contact.hub.c2.h">Aanvraag: paal laten zakken</h3>
+        <p data-i18n="contact.hub.c2.p">Toegang tot het plein voor een verhuizing of zwaar transport.</p>
+        <p style="margin-top:14px;"><a href="paaltje.html" class="mono" style="text-decoration:underline;" data-i18n="contact.hub.c2.link">Naar het formulier</a></p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/></svg>
+        <h3 data-i18n="contact.hub.c3.h">Contactgegevens</h3>
+        <p data-i18n="contact.hub.c3.p">Alle telefoonnummers en e-mailadressen op een rij.</p>
+        <p style="margin-top:14px;"><a href="contactgegevens.html" class="mono" style="text-decoration:underline;" data-i18n="contact.hub.c3.link">Naar contactgegevens</a></p>
+      </div>
     </div>
-    <p style="margin-top:24px; font-size:14px;"><a href="contactgegevens.html" class="mono" style="text-decoration:underline;" data-i18n="contact.cg_link">Op zoek naar een specifiek contactadres? Bekijk alle contactgegevens</a></p>
   </div>
 </section>
 <footer>
@@ -144,15 +118,8 @@
         <ul>
           <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
           <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
-          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
-          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
           <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
-          <li><a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a></li>
-          <li><a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a></li>
-          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
-          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
-          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
         </ul>
       </div>
       <div>
