@@ -84,17 +84,19 @@
 
   .portal-link{
     display:inline-flex; align-items:center; white-space:nowrap;
-    padding:8px 18px; border:1px solid var(--ink); border-radius:20px;
-    font-family:'IBM Plex Mono', monospace; font-size:12px; text-transform:uppercase;
-    letter-spacing:0.05em; color:var(--ink); text-decoration:none; border-bottom:none;
+    padding:10px 20px; border-radius:var(--radius);
+    font-family:'IBM Plex Mono', monospace; font-size:11px; font-weight:600; text-transform:uppercase;
+    letter-spacing:0.05em; text-decoration:none; border-bottom:none;
+    background:var(--brick); color:var(--sand); border:1px solid var(--brick);
+    transition:background .2s;
   }
   .portal-link:hover, .portal-link:focus-visible{
-    background:var(--ink); color:var(--sand); border-color:var(--ink);
+    background:#8f4232; color:var(--sand); border-color:#8f4232;
   }
   .portal-link-mobile{ display:none; }
   @media (max-width:860px){
     .portal-link-desktop{ display:none; }
-    .portal-link-mobile{ display:inline-flex; margin-top:8px; font-size:13px; }
+    .portal-link-mobile{ display:inline-flex; margin-top:8px; padding:13px 20px; font-size:13px; }
   }
 
   .lang-toggle{
