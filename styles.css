@@ -54,7 +54,7 @@
   }
   .nav{
     display:flex; align-items:center; justify-content:space-between;
-    padding:18px 0;
+    padding-top:18px; padding-bottom:18px;
   }
   .brand{
     font-family:'Big Shoulders Display', sans-serif;
@@ -127,7 +127,7 @@
 
   /* ---------- hero ---------- */
   .hero{ position:relative; overflow:hidden; padding-top:64px;}
-  .hero-inner{ position:relative; padding:64px 0 40px; }
+  .hero-inner{ position:relative; padding-top:64px; padding-bottom:40px; }
   .hero .eyebrow{
     font-family:'IBM Plex Mono', monospace; font-size:13px; color:var(--water-deep);
     text-transform:uppercase; letter-spacing:0.12em; margin-bottom:18px; display:block;
@@ -162,6 +162,14 @@
   @keyframes draw{ to{stroke-dashoffset:0;} }
   .meander-svg circle{ fill:var(--brick); }
   .meander-svg .addr{ font-family:'IBM Plex Mono', monospace; font-size:11px; fill:var(--ink-soft); }
+
+  @media (max-width:640px){
+    /* the SVG scales down with the narrow viewport, so its internal
+       text/dots/line need larger source values to stay legible */
+    .meander-svg .addr{ font-size:40px; }
+    .meander-svg circle{ r:16px; }
+    .meander-svg path.line{ stroke-width:8px; }
+  }
 
   /* ---------- section framing ---------- */
   section{ padding:96px 0; border-top:1px solid var(--line); }
