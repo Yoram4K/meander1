@@ -340,9 +340,16 @@ if(paaltjeForm){
         paaltjeForm.reset();
       } else {
         statusEl.textContent = statusText.error[currentLang()];
+        try{
+          const errBody = await res.json();
+          console.error('Formspree gaf een fout terug (status ' + res.status + '):', errBody);
+        }catch(parseErr){
+          console.error('Formspree gaf een fout terug (status ' + res.status + '), geen JSON-body.');
+        }
       }
     } catch(err){
       statusEl.textContent = statusText.error[currentLang()];
+      console.error('Netwerkfout bij versturen naar Formspree:', err);
     } finally {
       submitBtn.disabled = false;
     }
