@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meander1 — Vereniging van Eigenaren</title>
+<title>Aanvraag: paal laten zakken — Meander1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -74,67 +74,83 @@
   </div>
 </header>
 
-<section class="hero no-border">
-  <div class="wrap hero-inner">
-    <span class="eyebrow" data-i18n="hero.eyebrow">Van der Palmkade, Amsterdam</span>
-    <h1 data-i18n="hero.title">De bocht<br>in de kade</h1>
-    <p class="lede" data-i18n="hero.lede">Meander1 is genoemd naar zijn eigen vorm: een gebouw dat meebuigt met het water van de Kostverlorenvaart. 204 appartementen, twee binnentuinen en een plein zonder auto's — ontworpen door architect Rob Krier.</p>
-    <div class="hero-actions">
-      <a href="over.html" class="btn btn-primary" data-i18n="hero.cta1">Ontdek het gebouw</a>
-      <a href="contact.html" class="btn btn-secondary" data-i18n="hero.cta2">Neem contact op</a>
-    </div>
-
-    <svg class="meander-svg" viewBox="0 0 1180 220" preserveAspectRatio="none" aria-hidden="true">
-      <path class="line" d="M0,110 C120,20 200,20 320,90 C440,160 480,190 600,150 C720,110 760,40 880,60 C1000,80 1040,160 1180,120" />
-      <circle cx="0" cy="110" r="4"></circle>
-      <circle cx="320" cy="90" r="4"></circle>
-      <circle cx="600" cy="150" r="4"></circle>
-      <circle cx="880" cy="60" r="4"></circle>
-      <circle cx="1180" cy="120" r="4"></circle>
-      <text class="addr" x="6" y="98">Nr. 1</text>
-      <text class="addr" x="300" y="78">Nr. 55</text>
-      <text class="addr" x="575" y="176">Nr. 120</text>
-      <text class="addr" x="855" y="48">Nr. 165</text>
-      <text class="addr" x="1110" y="108">Nr. 204</text>
-    </svg>
-  </div>
-</section>
-
-<section id="quick">
+<section id="paaltje">
   <div class="wrap">
     <div class="section-head">
       <div>
-        <h2 data-i18n="quick.h2">Snel naar</h2>
+        <span class="num mono">06</span>
+        <h2 data-i18n="paaltje.h2">Aanvraag: paal<br>laten zakken</h2>
       </div>
-      <p class="desc" data-i18n="quick.desc">De vier dingen waar bewoners het vaakst voor hier zijn.</p>
+      <p class="desc" data-i18n="paaltje.desc">Toegang tot het plein aanvragen voor een verhuizing of zwaar transport.</p>
     </div>
-  </div>
-  <div class="wrap" style="padding:0;">
-    <div class="card-grid reveal">
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/></svg>
-        <h3 data-i18n="quick.c1.h">Contactgegevens</h3>
-        <p data-i18n="quick.c1.p">Alle telefoonnummers en e-mailadressen van Meander1 op één pagina.</p>
-        <p style="margin-top:14px;"><a href="contactgegevens.html" class="mono" style="text-decoration:underline;" data-i18n="quick.c1.link">Naar contactgegevens</a></p>
+
+    <div class="form-card reveal">
+      <p style="color:var(--ink-soft); font-size:15px; max-width:640px; margin-bottom:20px;" data-i18n="form.sub">Het plein van Meander1 is voetgangersgebied, afgesloten met een hydraulische paal. Voor verhuizingen en zwaar transport kun je toegang voor laden en lossen vragen. Vul minimaal 24 uur van tevoren onderstaand formulier in.</p>
+
+      <div style="max-width:640px; margin-bottom:28px;">
+        <p class="mono" style="font-size:12px; text-transform:uppercase; letter-spacing:0.05em; color:var(--ink-soft); margin-bottom:10px;" data-i18n="form.rules.h">Spelregels</p>
+        <ul style="color:var(--ink-soft); font-size:14.5px; padding-left:20px; margin:0;">
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l1">Toegang kan tussen 8:00 en 18:00 uur. Laden en lossen mag 30 minuten; verhuizingen zo lang als nodig.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l2">Het plein verlaten kan altijd — rijd tot aan het paaltje, dat daalt automatisch.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l3">Amsterdammertjes mogen niet worden verwijderd: achter het Amsterdammertje is de weg boven de parkeergarage te zwak voor auto's.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l4">Personenauto's mogen niet op het plein. Parkeren op de kade mag niet, behalve voor bedrijven die voor de VvE werken.</li>
+          <li style="margin-bottom:8px;" data-i18n="form.rules.l5">Parkeerruimte in onze garage kun je reserveren via Parqy.</li>
+          <li data-i18n="form.rules.l6">Uitzonderingen op deze regels kun je minstens een week van tevoren aanvragen bij bestuur@meander1.nl.</li>
+        </ul>
       </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
-        <h3 data-i18n="quick.c2.h">Paal laten zakken</h3>
-        <p data-i18n="quick.c2.p">Toegang tot het plein aanvragen voor een verhuizing of zwaar transport.</p>
-        <p style="margin-top:14px;"><a href="paaltje.html" class="mono" style="text-decoration:underline;" data-i18n="quick.c2.link">Naar het formulier</a></p>
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg>
-        <h3 data-i18n="quick.c3.h">Nieuwsbrief</h3>
-        <p data-i18n="quick.c3.p">Lees de laatste nieuwsbrieven van het bestuur.</p>
-        <p style="margin-top:14px;"><a href="nieuws.html" class="mono" style="text-decoration:underline;" data-i18n="quick.c3.link">Naar het archief</a></p>
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/><path d="M9 12h2l1-2 2 4 1-2h1"/></svg>
-        <h3 data-i18n="quick.c4.h">AED &amp; EHBO</h3>
-        <p data-i18n="quick.c4.p">Locatie en reanimatie-instructies bij een noodgeval.</p>
-        <p style="margin-top:14px;"><a href="aed.html" class="mono" style="text-decoration:underline;" data-i18n="quick.c4.link">Naar AED-informatie</a></p>
-      </div>
+
+      <form id="paaltjeForm">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="pf-naam" data-i18n="form.naam">Volledige naam</label>
+            <input id="pf-naam" name="naam" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-huisnr" data-i18n="form.huisnr">Huisnummer</label>
+            <input id="pf-huisnr" name="huisnummer" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-email" data-i18n="form.email">E-mailadres</label>
+            <input id="pf-email" name="email" type="email" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-tel" data-i18n="form.tel">Telefoonnummer</label>
+            <input id="pf-tel" name="telefoon" type="tel" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-bedrijf" data-i18n="form.bedrijf">Bedrijf</label>
+            <input id="pf-bedrijf" name="bedrijf" type="text" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-datum" data-i18n="form.datum">Datum</label>
+            <input id="pf-datum" name="datum" type="date" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-aankomst-van" data-i18n="form.aankomst_van">Aankomst vanaf</label>
+            <input id="pf-aankomst-van" name="aankomst_vanaf" type="time" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-aankomst-tot" data-i18n="form.aankomst_tot">Aankomst tot</label>
+            <input id="pf-aankomst-tot" name="aankomst_tot" type="time" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-aantal" data-i18n="form.aantal">Aantal voertuigen</label>
+            <input id="pf-aantal" name="aantal_voertuigen" type="number" min="1" value="1" required>
+          </div>
+          <div class="form-field">
+            <label for="pf-vaak" data-i18n="form.vaak">Hoe vaak op- en afrijden?</label>
+            <input id="pf-vaak" name="frequentie" type="text" placeholder="bv. 1x heen, 1x terug">
+          </div>
+          <div class="form-field full">
+            <label for="pf-reden" data-i18n="form.reden">Reden van bezoek</label>
+            <textarea id="pf-reden" name="reden" rows="3" placeholder="bv. verhuizing, levering nieuwe keuken, verbouwing" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit" id="pf-submit" data-i18n="form.submit">Aanvraag versturen</button>
+        <p class="form-status" id="pf-status" role="status" aria-live="polite"></p>
+        <p style="margin-top:20px; font-size:13.5px; color:var(--ink-soft);" data-i18n="form.note_multi">Meerdere toegangsmomenten nodig binnen dezelfde aanvraag? Vul dit formulier voor elk moment apart in, of mail direct naar paaltje@meander1.nl.</p>
+        <p style="margin-top:8px; font-size:13.5px; color:var(--ink-soft);" data-i18n="form.emergency">Spoedgeval tijdens de verhuizing? Bel Rein Schenk: 06 80 060 699.</p>
+      </form>
     </div>
   </div>
 </section>

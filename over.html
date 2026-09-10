@@ -15,12 +15,50 @@
   <div class="wrap nav">
     <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
-      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
-      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
-      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
-      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
-      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+      <div class="nav-item has-sub">
+        <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Over het gebouw" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="gebouw.html" data-i18n="nav.gebouw">Het gebouw</a>
+          <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+          <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Wonen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="voorzieningen.html" data-i18n="nav.voorzieningen">Voorzieningen</a>
+          <a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a>
+          <a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Bestuur &amp; beheer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="bestuursinfo.html" data-i18n="nav.bestuursinfo">Bestuur &amp; Munnik Beheer</a>
+          <a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a>
+          <a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Contact &amp; regelzaken" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="ingesprek.html" data-i18n="nav.ingesprek">In gesprek met het bestuur</a>
+          <a href="paaltje.html" data-i18n="nav.paaltje">Aanvraag: paal laten zakken</a>
+          <a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a>
+        </div>
+      </div>
       <a href="https://184.convect.nl/" target="_blank" rel="noopener" class="portal-link portal-link-mobile" data-i18n="nav.portal">Bewonersportaal</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
@@ -40,26 +78,30 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="num mono">01</span>
-        <h2 data-i18n="over.h2">Een slingerend<br>silhouet</h2>
+        <h2 data-i18n="over.hub.h2">Over het<br>gebouw</h2>
       </div>
-      <p class="desc" data-i18n="over.desc">Gebouwd op het voormalige industrieterrein AWIC (Amsterdams Westelijk Industrie Centrum), tussen de Jordaan en het water.</p>
+      <p class="desc" data-i18n="over.hub.desc">Geschiedenis, indeling en de buurt eromheen.</p>
     </div>
-
-    <div class="about-grid">
-      <div class="reveal">
-        <p data-i18n="over.p1">Meander1 dankt zijn naam aan zijn vorm. In plaats van een rechte gevel volgt het gebouw de kromming van de kade langs de Kostverlorenvaart — een ontwerpkeuze van architect Rob Krier die het complex zijn karakteristieke, golvende silhouet geeft.</p>
-        <p data-i18n="over.p2">Door die vorm ontstonden twee binnentuinen, een grote en een kleine, die rust en groen brengen midden in de stad. Aan de voorzijde ligt een autovrij plein aan de kade: een plek waar bewoners elkaar tegenkomen, kinderen buiten spelen en het water dichtbij blijft.</p>
-        <p data-i18n="over.p3">Het complex is tussen 1997 en 2007 in twee delen gebouwd. Dit gebouwdeel — de huisnummers 1 tot en met 204 — werd als eerste opgeleverd, in 2000. Naast de woningen bevat de plint ook een restaurant en kantoorruimte, wat Meander1 ook overdag een levendige plek maakt.</p>
-        <p data-i18n="over.p4">Het vervolg aan de Van der Palmkade (nummers 204 en hoger) en het gedeelte aan de Van Hallstraat is in 2007 opgeleverd als apart gebouwdeel: Meander2. Dat deel heeft een eigen VvE en een eigen website — deze site gaat uitsluitend over Meander1.</p>
+  </div>
+  <div class="wrap" style="padding:0;">
+    <div class="card-grid reveal">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V9l8-6 8 6v12M9 21v-8h6v8"/></svg>
+        <h3 data-i18n="over.hub.c1.h">Het gebouw</h3>
+        <p data-i18n="over.hub.c1.p">Geschiedenis, architectuur en kerncijfers van Meander1.</p>
+        <p style="margin-top:14px;"><a href="gebouw.html" class="mono" style="text-decoration:underline;" data-i18n="over.hub.c1.link">Naar het gebouw</a></p>
       </div>
-      <div class="fact-panel reveal">
-        <div class="fact"><span class="k mono" data-i18n="fact.architect">Architect</span><span class="v">Rob Krier</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.year">Oplevering</span><span class="v">2000</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.units">Appartementen</span><span class="v">204</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.gardens">Binnentuinen</span><span class="v" data-i18n="fact.gardens.v">Groot &amp; klein</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.parking">Parkeerplekken</span><span class="v">200</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.location">Ligging</span><span class="v" data-i18n="fact.location.v">Aan de Jordaan</span></div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <h3 data-i18n="over.hub.c2.h">Galerij</h3>
+        <p data-i18n="over.hub.c2.p">Vier plekken die het gebouw zijn karakter geven.</p>
+        <p style="margin-top:14px;"><a href="galerij.html" class="mono" style="text-decoration:underline;" data-i18n="over.hub.c2.link">Naar de galerij</a></p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        <h3 data-i18n="over.hub.c3.h">Buurt</h3>
+        <p data-i18n="over.hub.c3.p">De Staatsliedenbuurt en de omgeving van Meander1.</p>
+        <p style="margin-top:14px;"><a href="buurt.html" class="mono" style="text-decoration:underline;" data-i18n="over.hub.c3.link">Naar de buurt</a></p>
       </div>
     </div>
   </div>
@@ -76,15 +118,8 @@
         <ul>
           <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
           <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
-          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
-          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
           <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
-          <li><a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a></li>
-          <li><a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a></li>
-          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
-          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
-          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
         </ul>
       </div>
       <div>

@@ -15,12 +15,50 @@
   <div class="wrap nav">
     <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
-      <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
-      <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
-      <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
-      <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
-      <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
-      <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+      <div class="nav-item has-sub">
+        <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Over het gebouw" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="gebouw.html" data-i18n="nav.gebouw">Het gebouw</a>
+          <a href="galerij.html" data-i18n="nav.galerij">Galerij</a>
+          <a href="buurt.html" data-i18n="nav.buurt">Buurt</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="wonen.html" data-i18n="nav.wonen">Wonen</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Wonen" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="voorzieningen.html" data-i18n="nav.voorzieningen">Voorzieningen</a>
+          <a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a>
+          <a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Bestuur &amp; beheer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="bestuursinfo.html" data-i18n="nav.bestuursinfo">Bestuur &amp; Munnik Beheer</a>
+          <a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a>
+          <a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a>
+        </div>
+      </div>
+      <div class="nav-item has-sub">
+        <a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a>
+        <button type="button" class="sub-toggle" aria-label="Submenu Contact &amp; regelzaken" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="submenu">
+          <a href="ingesprek.html" data-i18n="nav.ingesprek">In gesprek met het bestuur</a>
+          <a href="paaltje.html" data-i18n="nav.paaltje">Aanvraag: paal laten zakken</a>
+          <a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a>
+        </div>
+      </div>
       <a href="https://184.convect.nl/" target="_blank" rel="noopener" class="portal-link portal-link-mobile" data-i18n="nav.portal">Bewonersportaal</a>
     </nav>
     <div style="display:flex; align-items:center; gap:12px;">
@@ -40,46 +78,30 @@
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="num mono">02</span>
-        <h2 data-i18n="wonen.h2">Wonen bij<br>Meander1</h2>
+        <h2 data-i18n="wonen.hub.h2">Wonen bij<br>Meander1</h2>
       </div>
-      <p class="desc" data-i18n="wonen.desc">De voorzieningen die het dagelijks wonen makkelijker maken.</p>
+      <p class="desc" data-i18n="wonen.hub.desc">Voorzieningen en praktische informatie voor bewoners.</p>
     </div>
   </div>
   <div class="wrap" style="padding:0;">
     <div class="card-grid reveal">
       <div class="card">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
-        <h3 data-i18n="wonen.c1.h">Het plein aan de kade</h3>
-        <p data-i18n="wonen.c1.p">Van der Palmkade is autovrij terrein en eigendom van de VvE — een plek om te wandelen, te spelen en buren tegen te komen. Auto's, motoren, scooters en Canta's/Biro's mogen er alleen rijden met toestemming van het bestuur. Bij het recreëren op de kade graag netjes houden en geen harde muziek. De kademuur zelf valt onder de gemeente, die ook toeziet op het verbod op zwemmen en aanmeren. Voor verhuizingen en zwaar transport kan het paaltje op verzoek zakken.</p>
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 13h18"/></svg>
-        <h3 data-i18n="wonen.c2.h">Parkeergarage</h3>
-        <p data-i18n="wonen.c2.p">Onder het gebouw liggen 200 parkeerplekken, individueel eigendom van bewoners, beveiligd met 34 HD-camera's. Toegangszenders worden verstrekt via Munnik VvE Beheer na een bestelformulier en betaling van de factuur. Let op bij een aanrijding met een elektrische auto: zet deze op straat en laat het accupakket controleren voordat je de garage weer inrijdt.</p>
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <h3 data-i18n="wonen.c3.h">Parkeerplek delen: Parqy</h3>
-        <p data-i18n="wonen.c3.p">Met het puntensysteem van Parqy kunnen bewoners een vrije parkeerplek per kwartier verhuren aan of huren van medebewoners. Wie een plek beschikbaar stelt, krijgt eenmalig 400 punten als basissaldo. Aanmelden kan via parqy@meander1.nl.</p>
+        <h3 data-i18n="wonen.hub.c1.h">Voorzieningen</h3>
+        <p data-i18n="wonen.hub.c1.p">Het plein aan de kade, de parkeergarage en Parqy.</p>
+        <p style="margin-top:14px;"><a href="voorzieningen.html" class="mono" style="text-decoration:underline;" data-i18n="wonen.hub.c1.link">Naar de voorzieningen</a></p>
       </div>
       <div class="card">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5Z"/><path d="M9 12h2l1-2 2 4 1-2h1"/></svg>
-        <h3 data-i18n="wonen.c7.h">AED bij de garage-ingang</h3>
-        <p data-i18n="wonen.c7.p">Bij de ingang van de parkeergarage hangt een AED voor noodgevallen. Bekijk de locatie en reanimatie-instructies.</p>
-        <p style="margin-top:14px;"><a href="aed.html" class="mono" style="text-decoration:underline;" data-i18n="wonen.c7.link">Naar AED-informatie</a></p>
+        <h3 data-i18n="wonen.hub.c2.h">AED &amp; EHBO</h3>
+        <p data-i18n="wonen.hub.c2.p">Locatie en reanimatie-instructies bij een noodgeval.</p>
+        <p style="margin-top:14px;"><a href="aed.html" class="mono" style="text-decoration:underline;" data-i18n="wonen.hub.c2.link">Naar AED-informatie</a></p>
       </div>
       <div class="card">
         <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
-        <h3 data-i18n="wonen.c8.h">Duurzaamheid</h3>
-        <p data-i18n="wonen.c8.p">Zonnepanelen, LED-verlichting en tijdschakelaars zijn al gerealiseerd. De Duurzaamheidscommissie kijkt nu naar isolatie, laadpunten en de gastransitie.</p>
-        <p style="margin-top:14px;"><a href="duurzaamheid.html" class="mono" style="text-decoration:underline;" data-i18n="wonen.c8.link">Naar duurzaamheidspagina</a></p>
-      </div>
-      <div class="card">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 9v11"/></svg>
-        <h3 data-i18n="wonen.c9.h">Storing melden</h3>
-        <p data-i18n="wonen.c9.p">Verstopping, liftstoring of een defecte garagedeur? Alle nummers staan bij elkaar op de contactgegevens-pagina.</p>
-        <p style="margin-top:14px;"><a href="contactgegevens.html" class="mono" style="text-decoration:underline;" data-i18n="wonen.c9.link">Naar contactgegevens</a></p>
+        <h3 data-i18n="wonen.hub.c3.h">Duurzaamheid</h3>
+        <p data-i18n="wonen.hub.c3.p">Zonnepanelen, LED-verlichting en de plannen voor de toekomst.</p>
+        <p style="margin-top:14px;"><a href="duurzaamheid.html" class="mono" style="text-decoration:underline;" data-i18n="wonen.hub.c3.link">Naar duurzaamheidspagina</a></p>
       </div>
     </div>
   </div>
@@ -96,15 +118,8 @@
         <ul>
           <li><a href="over.html" data-i18n="nav.over">Over het gebouw</a></li>
           <li><a href="wonen.html" data-i18n="nav.wonen">Wonen</a></li>
-          <li><a href="galerij.html" data-i18n="nav.galerij">Galerij</a></li>
-          <li><a href="buurt.html" data-i18n="nav.buurt">Buurt</a></li>
           <li><a href="bestuur.html" data-i18n="nav.bestuur">Bestuur &amp; beheer</a></li>
           <li><a href="contact.html" data-i18n="nav.contact">Contact &amp; regelzaken</a></li>
-          <li><a href="contactgegevens.html" data-i18n="nav.contactgegevens">Contactgegevens</a></li>
-          <li><a href="convect.html" data-i18n="nav.convect">Convect uitgelegd</a></li>
-          <li><a href="aed.html" data-i18n="nav.aed">AED &amp; EHBO</a></li>
-          <li><a href="duurzaamheid.html" data-i18n="nav.duurzaamheid">Duurzaamheid</a></li>
-          <li><a href="nieuws.html" data-i18n="nav.nieuws">Nieuwsbrief</a></li>
         </ul>
       </div>
       <div>
