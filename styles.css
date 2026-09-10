@@ -125,6 +125,10 @@
   .portal-link:hover, .portal-link:focus-visible{
     background:var(--brick); color:var(--sand);
   }
+  nav.links a.portal-link{ border-bottom:1px solid var(--brick); }
+  nav.links a.portal-link:hover, nav.links a.portal-link:focus-visible{
+    color:var(--sand); border-color:var(--brick);
+  }
   .portal-link-mobile{ display:none; }
   @media (max-width:860px){
     .portal-link-desktop{ display:none; }
