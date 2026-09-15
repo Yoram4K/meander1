@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Het gebouw — Meander1</title>
+<title>Galerij — Meander1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <a class="brand" href="../index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
       <div class="nav-item has-sub">
         <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
@@ -74,38 +74,70 @@
   </div>
 </header>
 
-<section id="over">
+<section id="galerij">
   <div class="wrap">
     <div class="section-head">
       <div>
-        <span class="num mono">01</span>
-        <h2 data-i18n="over.h2">Een slingerend<br>silhouet</h2>
+        <span class="num mono">03</span>
+        <h2 data-i18n="gal.h2">Meander<br>in beeld</h2>
       </div>
-      <p class="desc" data-i18n="over.desc">Gebouwd op het voormalige industrieterrein AWIC (Amsterdams Westelijk Industrie Centrum), tussen de Jordaan en het water.</p>
+      <p class="desc" data-i18n="gal.desc">Vier plekken die het gebouw zijn karakter geven.</p>
     </div>
 
-    <div class="about-grid">
-      <div class="reveal">
-        <p data-i18n="over.p1">Meander1 dankt zijn naam aan zijn vorm. In plaats van een rechte gevel volgt het gebouw de kromming van de kade langs de Kostverlorenvaart — een ontwerpkeuze van architect Rob Krier die het complex zijn karakteristieke, golvende silhouet geeft.</p>
-        <p data-i18n="over.p2">Door die vorm ontstonden twee binnentuinen, een grote en een kleine, die rust en groen brengen midden in de stad. Aan de voorzijde ligt een autovrij plein aan de kade: een plek waar bewoners elkaar tegenkomen, kinderen buiten spelen en het water dichtbij blijft.</p>
-        <p data-i18n="over.p3">Het complex is tussen 1997 en 2007 in twee delen gebouwd. Dit gebouwdeel — de huisnummers 1 tot en met 204 — werd als eerste opgeleverd, in 2000. Naast de woningen bevat de plint ook een restaurant en kantoorruimte, wat Meander1 ook overdag een levendige plek maakt.</p>
-        <p data-i18n="over.p4">Het vervolg aan de Van der Palmkade (nummers 204 en hoger) en het gedeelte aan de Van Hallstraat is in 2007 opgeleverd als apart gebouwdeel: Meander2. Dat deel heeft een eigen VvE en een eigen website — deze site gaat uitsluitend over Meander1.</p>
-      </div>
-      <div class="fact-panel reveal">
-        <div class="fact"><span class="k mono" data-i18n="fact.architect">Architect</span><span class="v">Rob Krier</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.year">Oplevering</span><span class="v">2000</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.units">Appartementen</span><span class="v">204</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.gardens">Binnentuinen</span><span class="v" data-i18n="fact.gardens.v">Groot &amp; klein</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.parking">Parkeerplekken</span><span class="v">200</span></div>
-        <div class="fact"><span class="k mono" data-i18n="fact.location">Ligging</span><span class="v" data-i18n="fact.location.v">Aan de Jordaan</span></div>
-      </div>
-    </div>
+    <div class="gallery-grid reveal">
+      <figure class="g-tile">
+        <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+          <rect width="400" height="400" fill="#E8E1D3"/>
+          <path d="M0,260 C80,180 140,320 220,240 C300,160 340,260 400,220 L400,400 L0,400 Z" fill="#A8503E" opacity="0.85"/>
+          <path d="M0,300 C90,240 160,340 240,280 C320,220 360,300 400,270 L400,400 L0,400 Z" fill="#3E5C63" opacity="0.9"/>
+          <g stroke="#F2EEE6" stroke-width="2" opacity="0.6">
+            <line x1="30" y1="330" x2="30" y2="380"/><line x1="60" y1="320" x2="60" y2="380"/>
+            <line x1="90" y1="335" x2="90" y2="380"/><line x1="120" y1="315" x2="120" y2="380"/>
+            <line x1="150" y1="330" x2="150" y2="380"/><line x1="180" y1="310" x2="180" y2="380"/>
+            <line x1="210" y1="325" x2="210" y2="380"/><line x1="240" y1="305" x2="240" y2="380"/>
+            <line x1="270" y1="320" x2="270" y2="380"/><line x1="300" y1="300" x2="300" y2="380"/>
+            <line x1="330" y1="315" x2="330" y2="380"/><line x1="360" y1="295" x2="360" y2="380"/>
+          </g>
+        </svg>
+        <figcaption data-i18n="gal.t1">De gevel langs de vaart</figcaption>
+      </figure>
 
-    <div class="beheer-box reveal" style="margin-top:56px; max-width:720px;">
-      <h3 data-i18n="over.jubileum.h">25 jaar Meander1</h3>
-      <p data-i18n="over.jubileum.p">Op 25 augustus 2025 vierden we het 25-jarig bestaan van ons gebouw. Van die feestelijke middag is een fotopagina gemaakt.</p>
-      <a class="contact-line" href="https://www.flickr.com/photos/aboutamsterdam/albums/72177720328780428/with/54760885103" target="_blank" rel="noopener"><span data-i18n="over.jubileum.link">Foto's van het jubileum</span><span class="mono">↗</span></a>
+      <figure class="g-tile">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="200" height="200" fill="#7C8B6F"/>
+          <circle cx="60" cy="70" r="26" fill="#F2EEE6" opacity="0.25"/>
+          <circle cx="140" cy="120" r="34" fill="#F2EEE6" opacity="0.2"/>
+          <circle cx="100" cy="160" r="18" fill="#F2EEE6" opacity="0.3"/>
+          <path d="M0,190 Q100,170 200,190 L200,200 L0,200 Z" fill="#22262B" opacity="0.15"/>
+        </svg>
+        <figcaption data-i18n="gal.t2">De binnentuinen</figcaption>
+      </figure>
+
+      <figure class="g-tile">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="200" height="200" fill="#22262B"/>
+          <g fill="none" stroke="#A8503E" stroke-width="3">
+            <rect x="20" y="30" width="35" height="140"/>
+            <rect x="65" y="30" width="35" height="140"/>
+            <rect x="110" y="30" width="35" height="140"/>
+            <rect x="155" y="30" width="25" height="140"/>
+          </g>
+        </svg>
+        <figcaption data-i18n="gal.t3">De parkeergarage</figcaption>
+      </figure>
+
+      <figure class="g-tile">
+        <svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice">
+          <rect width="200" height="200" fill="#3E5C63"/>
+          <path d="M0,120 C50,80 90,150 140,110 C160,95 180,105 200,90" fill="none" stroke="#F2EEE6" stroke-width="4" opacity="0.8"/>
+          <circle cx="40" cy="107" r="5" fill="#A8503E"/>
+          <circle cx="140" cy="110" r="5" fill="#A8503E"/>
+          <circle cx="200" cy="90" r="5" fill="#A8503E"/>
+        </svg>
+        <figcaption data-i18n="gal.t4">Het plein aan de kade</figcaption>
+      </figure>
     </div>
+    <p class="gallery-note" data-i18n="gal.note">Dit zijn illustraties in de stijl van de site — ter vervanging kan het bestuur hier eenvoudig eigen foto's van het gebouw plaatsen.</p>
   </div>
 </section>
 <footer>
@@ -141,6 +173,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

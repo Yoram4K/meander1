@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>In gesprek met het bestuur — Meander1</title>
+<title>Over het gebouw — Meander1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <a class="brand" href="../index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
       <div class="nav-item has-sub">
         <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
@@ -74,17 +74,36 @@
   </div>
 </header>
 
-<section id="ingesprek" class="no-border">
+<section id="over">
   <div class="wrap">
-    <div class="section-head" style="margin-bottom:0;">
+    <div class="section-head">
       <div>
-        <span class="num mono">07</span>
-        <h2 data-i18n="ingesprek.h2">In gesprek<br>met het bestuur</h2>
+        <h2 data-i18n="over.hub.h2">Over het<br>gebouw</h2>
       </div>
-      <p class="desc" data-i18n="ingesprek.desc">Vragen over de vereniging, ideeën voor het gebouw of iets melden? Mail het bestuur.</p>
+      <p class="desc" data-i18n="over.hub.desc">Geschiedenis, indeling en de buurt eromheen.</p>
     </div>
-    <p style="margin-top:32px;"><a href="mailto:bestuur@meander1.nl" class="btn btn-primary" data-i18n="ingesprek.cta">Mail het bestuur</a></p>
-    <p style="margin-top:24px; font-size:14px;"><a href="contactgegevens.html" class="mono" style="text-decoration:underline;" data-i18n="contact.cg_link">Op zoek naar een specifiek contactadres? Bekijk alle contactgegevens</a></p>
+  </div>
+  <div class="wrap" style="padding:0;">
+    <div class="card-grid reveal">
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 21V9l8-6 8 6v12M9 21v-8h6v8"/></svg>
+        <h3 data-i18n="over.hub.c1.h">Het gebouw</h3>
+        <p data-i18n="over.hub.c1.p">Geschiedenis, architectuur en kerncijfers van Meander1.</p>
+        <p style="margin-top:14px;"><a href="gebouw.html" class="mono" style="text-decoration:underline;" data-i18n="over.hub.c1.link">Naar het gebouw</a></p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="1"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        <h3 data-i18n="over.hub.c2.h">Galerij</h3>
+        <p data-i18n="over.hub.c2.p">Vier plekken die het gebouw zijn karakter geven.</p>
+        <p style="margin-top:14px;"><a href="galerij.html" class="mono" style="text-decoration:underline;" data-i18n="over.hub.c2.link">Naar de galerij</a></p>
+      </div>
+      <div class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        <h3 data-i18n="over.hub.c3.h">Buurt</h3>
+        <p data-i18n="over.hub.c3.p">De Staatsliedenbuurt en de omgeving van Meander1.</p>
+        <p style="margin-top:14px;"><a href="buurt.html" class="mono" style="text-decoration:underline;" data-i18n="over.hub.c3.link">Naar de buurt</a></p>
+      </div>
+    </div>
   </div>
 </section>
 <footer>
@@ -120,6 +139,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

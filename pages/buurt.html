@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nieuwsbrief — Meander1</title>
+<title>Buurt — Meander1</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="index.html">MEANDER1 <span class="mono">/ VvE</span></a>
+    <a class="brand" href="../index.html">MEANDER1 <span class="mono">/ VvE</span></a>
     <nav class="links" id="navLinks">
       <div class="nav-item has-sub">
         <a href="over.html" data-i18n="nav.over">Over het gebouw</a>
@@ -74,29 +74,24 @@
   </div>
 </header>
 
-<section id="nieuws">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <h2 data-i18n="nieuws.h2">Nieuws-<br>brief</h2>
-      </div>
-      <p class="desc" data-i18n="nieuws.desc">De belangrijkste updates van het bestuur, per e-mail en hier gearchiveerd.</p>
+<section id="buurt">
+  <div class="wrap buurt-grid">
+    <div class="reveal">
+      <span class="num mono">04</span>
+      <h2 style="margin-top:6px; font-size:clamp(30px,4vw,46px);" data-i18n="buurt.h2">De Staatsliedenbuurt</h2>
+      <p style="margin-top:20px;" data-i18n="buurt.p1">Meander1 ligt in de Staatsliedenbuurt, onderdeel van het voormalige stadsdeel Westerpark — vlak tegen de Jordaan aan. De buurt kende een minder glanzende periode, maar is door renovaties en nieuwbouw uitgegroeid tot een van de gewildere hoeken van de stad.</p>
+      <p data-i18n="buurt.p2">Vlakbij ligt het Westerpark, met de Westergasfabriek als culturele huiskamer voor markten, film en terrassen. Voor gemeentezaken en buurtinformatie verwijst het bestuur bewoners graag naar de officiële kanalen van stadsdeel en gemeente.</p>
     </div>
-
-    <div class="reveal" style="max-width:720px;">
-      <p style="color:var(--ink-soft); font-size:15px; margin-bottom:32px;" data-i18n="nieuws.p1">Ontvang je de nieuwsbrief nog niet automatisch per e-mail? Mail naar bestuur@meander1.nl om je aan te melden.</p>
-      <ul class="board-list">
-        <li><a href="https://vereniging-van-eigenaren-meander1.email-provider.eu/web/ocgyldacnl/xfrqbwdgif?lp-t=1780644017" target="_blank" rel="noopener" style="text-decoration:underline;" data-i18n="nieuws.i1">Meandernieuws mei 2026</a><span class="role mono">05/06/2026</span></li>
-        <li><a href="https://vereniging-van-eigenaren-meander1.email-provider.eu/web/ocgyldacnl/jmz7mhu61d" target="_blank" rel="noopener" style="text-decoration:underline;" data-i18n="nieuws.i2">Meandernieuws april 2026</a><span class="role mono">05/06/2026</span></li>
-        <li><span data-i18n="nieuws.i3">Meandernieuws december 2025</span><span class="role mono">23/12/2025</span></li>
-        <li><span data-i18n="nieuws.i4">Meandernieuws over brand</span><span class="role mono">10/11/2025</span></li>
-        <li><span data-i18n="nieuws.i5">Meandernieuws september 2025</span><span class="role mono">15/10/2025</span></li>
-        <li><a href="https://vereniging-van-eigenaren-meander1.email-provider.eu/web/ocgyldacnl/ylgcmawvea?lp-t=1751262964" target="_blank" rel="noopener" style="text-decoration:underline;" data-i18n="nieuws.i6">Meandernieuws mei 2025</a><span class="role mono">08/08/2025</span></li>
-        <li><a href="https://vereniging-van-eigenaren-meander1.email-provider.eu/web/ocgyldacnl/4lybszpujf" target="_blank" rel="noopener" style="text-decoration:underline;" data-i18n="nieuws.i7">Meandernieuws april 2025</a><span class="role mono">08/08/2025</span></li>
-        <li><span data-i18n="nieuws.i8">Meandernieuws maart 2025</span><span class="role mono">08/08/2025</span></li>
-        <li><span data-i18n="nieuws.i9">Meandernieuws januari 2025</span><span class="role mono">08/08/2025</span></li>
-      </ul>
-      <p style="margin-top:32px;"><a href="https://www.meander1.nl/category/nieuwsbriefmeander1/" target="_blank" rel="noopener" class="mono" style="text-decoration:underline;" data-i18n="nieuws.archive">Bekijk het volledige archief op meander1.nl</a></p>
+    <div class="buurt-map reveal">
+      <svg viewBox="0 0 320 260" width="100%" height="auto">
+        <rect width="320" height="260" fill="#F2EEE6"/>
+        <path d="M0,150 C60,120 100,180 160,140 C220,100 260,160 320,130" stroke="#3E5C63" stroke-width="10" fill="none" opacity="0.5"/>
+        <rect x="120" y="90" width="70" height="50" fill="#A8503E" opacity="0.85"/>
+        <circle cx="155" cy="115" r="4" fill="#F2EEE6"/>
+        <text x="130" y="170" class="mono" font-size="11" fill="#4B5158">Van der Palmkade</text>
+        <text x="20" y="40" class="mono" font-size="11" fill="#4B5158">Westerpark</text>
+        <text x="230" y="230" class="mono" font-size="11" fill="#4B5158">Jordaan →</text>
+      </svg>
     </div>
   </div>
 </section>
@@ -133,6 +128,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
