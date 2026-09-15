@@ -116,7 +116,7 @@ const dict = {
   "bestuur.desc":{nl:"Wie de vereniging vertegenwoordigt en wie het dagelijks beheer voert.", en:"Who represents the association, and who runs day-to-day management."},
   "bestuur.p1":{nl:"Elke eigenaar van een appartement in Meander1 is automatisch lid van de VvE. De leden kiezen samen een bestuur, dat besluiten van de ledenvergadering uitvoert, een begroting opstelt en de belangen van de vereniging behartigt — met hulp van bewoners die hun eigen kennis inbrengen op thema's als financiën, techniek of duurzaamheid.", en:"Every apartment owner in Meander1 is automatically a member of the VvE. Members together elect a board, which carries out decisions from the general meeting, prepares a budget and represents the association's interests — supported by residents who contribute their own expertise on topics like finance, technical matters or sustainability."},
   "bestuur.p1.name":{nl:"Henk Helder", en:"Henk Helder"},
-  "bestuur.p1.role":{nl:"Voorzitter", en:"Chairperson"},
+  "bestuur.p1.role":{nl:"Bestuurslid", en:"Board member"},
   "bestuur.p2.name":{nl:"Rikky Van Osch", en:"Rikky Van Osch"},
   "bestuur.p2.role":{nl:"Bestuurslid & penningmeester", en:"Board member & treasurer"},
   "bestuur.p3.name":{nl:"Jolanda Bakker", en:"Jolanda Bakker"},
