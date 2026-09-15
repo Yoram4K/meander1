@@ -220,9 +220,15 @@
   /* ---------- section framing ---------- */
   section{ padding:96px 0; border-top:1px solid var(--line); }
   section.no-border{ border-top:none; }
+  @media (max-width:640px){
+    section{ padding:48px 0 56px; }
+  }
   .section-head{
     display:flex; justify-content:space-between; align-items:flex-end; gap:24px;
     margin-bottom:56px; flex-wrap:wrap;
+  }
+  @media (max-width:640px){
+    .section-head{ margin-bottom:32px; }
   }
   .section-head .num{ font-family:'IBM Plex Mono', monospace; color:var(--water); font-size:13px; }
   .section-head h2{ font-size: clamp(30px, 4vw, 46px); margin-top:6px; }
