@@ -232,7 +232,6 @@
   @media (max-width:640px){
     .section-head{ margin-bottom:32px; }
   }
-  .section-head .num{ font-family:'IBM Plex Mono', monospace; color:var(--water); font-size:13px; }
   .section-head h2{ font-size: clamp(30px, 4vw, 46px); margin-top:6px; }
   .section-head .desc{ max-width:340px; color:var(--ink-soft); font-size:15px; }
 

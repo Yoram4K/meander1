@@ -240,7 +240,6 @@ const dict = {
   "nieuws.h2":{nl:"Nieuws-<br>brief", en:"News-<br>letter"},
   "nieuws.desc":{nl:"De belangrijkste updates van het bestuur, per e-mail en hier gearchiveerd.", en:"The board's key updates, sent by email and archived here."},
   "nieuws.p1":{nl:"Ontvang je de nieuwsbrief nog niet automatisch per e-mail? Mail naar bestuur@meander1.nl om je aan te melden.", en:"Not yet receiving the newsletter automatically by email? Email bestuur@meander1.nl to sign up."},
-  "nieuws.archive":{nl:"Bekijk het volledige archief op meander1.nl", en:"View the full archive on meander1.nl"},
   "nieuws.i1":{nl:"Meandernieuws mei 2026", en:"Meander news May 2026"},
   "nieuws.i2":{nl:"Meandernieuws april 2026", en:"Meander news April 2026"},
   "nieuws.i3":{nl:"Meandernieuws december 2025", en:"Meander news December 2025"},
