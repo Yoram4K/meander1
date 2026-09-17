@@ -338,11 +338,7 @@ document.getElementById('btnEn').addEventListener('click', ()=>setLang('en'));
 })();
 
 // paaltje form -> real submission via Formspree
-// SETUP (eenmalig, 5 minuten):
-// 1. Ga naar https://formspree.io en maak een gratis account aan met paaltje@meander1.nl
-// 2. Maak een nieuw formulier aan, Formspree geeft je een endpoint als "https://formspree.io/f/xxxxxxxx"
-// 3. Plak die xxxxxxxx-code hieronder in plaats van "YOUR_FORM_ID"
-// 4. Formspree stuurt de eerste aanvraag ter bevestiging - klik die mail open om het formulier te activeren
+// Endpoint beheren: log in op formspree.io met het account dat dit formulier heeft aangemaakt.
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xoeagwod';
 
 const paaltjeForm = document.getElementById('paaltjeForm');
