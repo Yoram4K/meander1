@@ -272,6 +272,7 @@
   @media (max-width:860px){ .buurt-grid{grid-template-columns:1fr;} }
   .buurt-grid p{ color:var(--ink-soft); font-size:16.5px; }
   .buurt-map{ background:var(--sand-deep); border:1px solid var(--line); border-radius:var(--radius); padding:24px; }
+  .buurt-map svg{ width:100%; height:auto; display:block; }
 
   /* ---------- board / people ---------- */
   .board-wrap{ display:grid; grid-template-columns: 0.8fr 1.2fr; gap:64px; }
